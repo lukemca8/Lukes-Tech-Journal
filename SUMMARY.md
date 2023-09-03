@@ -4,6 +4,7 @@
 * [Course: SYS-255](course-sys-255/README.md)
   * [Labs](course-sys-255/labs/README.md)
     * [Virtual Firewall and Windows 10 Configuration](course-sys-255/labs/virtual-firewall-and-windows-10-configuration.md)
+  * [Tools](course-sys-255/tools.md)
 * [Course: Net-150](course-net-150/README.md)
   * [Labs](course-net-150/labs/README.md)
     * [RIP](course-net-150/labs/rip.md)
