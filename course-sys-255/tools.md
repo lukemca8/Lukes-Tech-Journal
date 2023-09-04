@@ -12,20 +12,31 @@ A collection of virtualization products, used for creating and operating virtual
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>vSphere HTML client </p></figcaption></figure>
 
-## [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
+## Shells
+
+A shell is a user interface for executing commands in an OS. The outer layer of an OS, hence the name shell. Command Line Interface (CLI) and Graphical User Interface (GUI) are the most common types of shells. A CLI is operated by typing commands in a windowed program. A GUI is operated with your mouse and can be navigated with the assistance of graphical icons. The Windows OS menu screen is an example of a GUI.
+
+### [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3)
 
 Used for automating the management of systems. Utilizes a command-line shell with cmd scripting language. Designed for system administration, it's perfect for this course. &#x20;
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>empty PowerShell window</p></figcaption></figure>
 
-## [Command Prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)&#x20;
+### [Command Prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)&#x20;
 
 Cmd or command prompt is an application used to execute commands. These commands can be used to create scripts that automate tasks, run complex administrative tasks, and troubleshoot various Windows errors/problems.&#x20;
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>empty cmd window </p></figcaption></figure>
 
-## Ping&#x20;
+## Commands
+
+### Ping&#x20;
 
 Connectivity test (with an IP ping) - Is my default gateway setup correctly? Is my eth0 interface set up properly?
 
-DNS test (with a name ping)- uses DNS record A to find the IP correlated to the domain.&#x20;
+DNS test (with a name ping)- uses DNS record A to find the IP correlated to the domain. &#x20;
+
+## Active Directory&#x20;
+
+A program that can manage users, computers, and objects ( a data structure that can be defined by attributes/characteristics and class).&#x20;
+

@@ -4,7 +4,7 @@
 
 ### Active directory:
 
-Users, computers, a way to manage objects ( a data structure that can be defined by attributes/characteristics and class)&#x20;
+A way to manage users, computers, and objects ( a data structure that can be defined by attributes/characteristics and class)&#x20;
 
 windows server -> Domain controller -> Active Directory Domain&#x20;
 
