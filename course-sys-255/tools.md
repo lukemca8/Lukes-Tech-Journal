@@ -22,4 +22,10 @@ Used for automating the management of systems. Utilizes a command-line shell wit
 
 Cmd or command prompt is an application used to execute commands. These commands can be used to create scripts that automate tasks, run complex administrative tasks, and troubleshoot various Windows errors/problems.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>empty cmd window</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>empty cmd window </p></figcaption></figure>
+
+## Ping&#x20;
+
+Connectivity test (with an IP ping) - Is my default gateway setup correctly? Is my eth0 interface set up properly?
+
+DNS test (with a name ping)- uses DNS record A to find the IP correlated to the domain.&#x20;
