@@ -105,7 +105,7 @@ Tracert follows the route a ping makes. It shows every hop the ping makes. When 
 
 ## Reflection: &#x20;
 
-Pfsense was totally new to me, being able to manage the firewall from a website was confusing to me. How does the website know which firewall to log into if everyone in the class is using the same IP to log into it? (10.0.5.2).&#x20;
+Pfsense was totally new to me, being able to manage the firewall from a website was confusing to me. How does the website know which firewall to log into if everyone in the class is using the same IP to log into it? (10.0.5.2).  - The class WAN (10.0.17.0/24) goes down to everyone's own WAN interface (mine is 10.0.17.109/24) on their firewall, and it gives everyone their own LAN on the other firewall interface. Even though everyone's LAN IP is the same, the network is segmented down from their own WAN.
 
 Configuring the ethernet adapter through Windows settings was new to me. I was confused if I should use 10.0.5.100 like in the ss, or 10.0.5.2. I tried the latter first and I couldn’t connect to the log-in page for pfSense, so I changed it to the 10.0.5.100. &#x20;
 
