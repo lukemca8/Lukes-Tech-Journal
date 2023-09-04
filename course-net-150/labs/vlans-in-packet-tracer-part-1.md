@@ -15,7 +15,7 @@ description: >-
 * Configure switch access ports
 * Configure switch trunk ports &#x20;
 
-![](<../../.gitbook/assets/image (2).png>)&#x20;
+![](<../../.gitbook/assets/image (2) (1).png>)&#x20;
 
 ## Reflection:&#x20;
 
