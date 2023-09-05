@@ -12,5 +12,7 @@ DNS uses a database hierarchy containing IP addresses and each of their associat
 
 ### Records
 
-DNS records contain&#x20;
+Resource Records (RR) hold specific information on objects. There are different RRs with different information stored in their data. A DNS zone database is a collection of these records. There are &#x20;
+
+* [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)
 
