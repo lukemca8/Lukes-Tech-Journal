@@ -1,6 +1,6 @@
 # Windows Server 2019, ADDS, and DNS
 
-## Decide to keep or delete later (notes while doing the lab)
+## &#x20;(notes while doing the lab)
 
 Configure new workstation:&#x20;
 
