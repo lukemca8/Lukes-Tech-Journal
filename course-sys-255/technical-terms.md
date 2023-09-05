@@ -1,6 +1,6 @@
 # Technical Terms
 
-## Upstream Gateway:&#x20;
+## Upstream Gateway&#x20;
 
 An upstream gateway is the last network device until the next network segment in the architecture.
 
@@ -12,7 +12,17 @@ DNS uses a database hierarchy containing IP addresses and each of their associat
 
 ### Records
 
-Resource Records (RR) hold specific information on objects. There are different RRs with different information stored in their data. A DNS zone database is a collection of these records. There are &#x20;
+A resource record (RR) is an entry in a DNS database file. Every RR has specific information on objects (variables, a data structure, a function, or a method). This data contains the following fields; domain name, time to live (TTL), address class, record type, and sometimes other fields are included depending on the RR type.&#x20;
+
+(Explain the data fields)
+
+#### Record types
+
+| Record Type | Use |
+| ----------- | --- |
+|             |     |
+|             |     |
+|             |     |
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)
 
