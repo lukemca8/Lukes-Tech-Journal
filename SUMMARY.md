@@ -1,6 +1,11 @@
 # Table of contents
 
 * [Luke's Tech Journal](README.md)
+* [Course: NET-215](course-net-215/README.md)
+  * [Labs](course-net-215/labs.md)
+  * [Tools](course-net-215/tools.md)
+  * [Technical Terms](course-net-215/technical-terms.md)
+  * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
   * [Labs](course-sys-255/labs/README.md)
     * [Windows Server 2019, ADDS, and DNS](course-sys-255/labs/windows-server-2019-adds-and-dns.md)
