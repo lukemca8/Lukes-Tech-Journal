@@ -10,28 +10,36 @@ The OSI Reference model is useful for troubleshooting network issues by isolatin
 
 #### Application&#x20;
 
-aifhagfhoiadg
+PLACEHOLDER
 
 #### Presentation
 
-anfalknf
+PLACEHOLDER
 
 #### Session
 
-,mdf
+PLACEHOLDER
 
 #### Transport&#x20;
 
-sldkfnlskdn
+PLACEHOLDER
 
 #### Network&#x20;
 
-sk.ndfm
+PLACEHOLDER
 
 #### Data Link
 
-s.kdnf
+PLACEHOLDER
 
 #### Physical&#x20;
 
-s,dm.fn
+PLACEHOLDER
+
+## Packet Headers&#x20;
+
+PLACEHOLDER &#x20;
+
+## Network protocols&#x20;
+
+go into the basics and correlate them to the different layers in OSI and the packet headers.
