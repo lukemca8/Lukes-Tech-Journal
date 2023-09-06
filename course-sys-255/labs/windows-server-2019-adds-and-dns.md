@@ -1,5 +1,16 @@
 ---
 description: Lab 02
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # Windows Server 2019, ADDS, and DNS

@@ -2,6 +2,17 @@
 description: >-
   Objective: Demonstrate understanding of VLAN uses and limitations and simple
   configuration of routing between VLANs
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # VLANS in Packet Tracer Part 1

@@ -1,5 +1,16 @@
 ---
 description: Lab 01
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
 ---
 
 # Virtual Firewall and Windows 10 Configuration
