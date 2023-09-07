@@ -28,15 +28,17 @@ DNS uses a database hierarchy containing IP addresses and each of their associat
 
 Zone files are text files that contain a resource record in plain text and are used to define a zone. A DNS zone is a distinct portion of the domain namespace in the Domain Name System. Usually, these zones are managed by a single delegated Domain Controller. A zone is classified either as a domain name, a domain name with multiple subdomains, or a lot of domain names. DNS zones that are in the [AD DS](tools.md#active-directory-domain-services) Windows program are known as Active Directory-integrated zones. Zone files contain instructions for DNS servers on how to handle requests for your domain, and sometimes list the data of a DNS cache. Usually, zone files are filed under the named working directory (/var/named/).
 
-### Records
+{% code title="zone file e.g." %}
+```
+localhost   IN	    A	    127.0.0.1
+```
+{% endcode %}
+
+#### Records
 
 A resource record (RR) is the main entry in a DNS zone file. Every RR has specific information on objects (variables, a data structure, a function, or a method). This data contains the following fields; domain name, time to live (TTL), address class, record type, and sometimes other fields are included depending on the RR type.&#x20;
 
-#### Time to Live
-
 Time to live or hop limit restricts how long data can exist in a computer or network. TTL is used as a timestamp or counter that is either connected to or built into the data. In this case, the data is built into a resource record. Data is either removed or revalidated when the event count or timespan has passed.   &#x20;
-
-#### Class
 
 For typical DNS records including hostnames, servers, or IP addresses, the class of record is IN (internet). For the HS class, which uses MIT/Athena "Hesiod" data, limited support is provided.
 
@@ -49,11 +51,9 @@ For typical DNS records including hostnames, servers, or IP addresses, the class
 | Mail Exchange (MX)            | Identifies the email servers for a domain.                        |
 | Service Locator (SRV)         | Finds SIP servers, Conference servers, and other common services. |
 
-{% code title="zone file e.g." %}
-```
-localhost   IN	    A	    127.0.0.1
-```
-{% endcode %}
+#### DNS Cache
+
+
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
 * [https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/#:\~:text=A%20zone%20file%20provides%20information,contents%20of%20a%20DNS%20cache.](https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/)
