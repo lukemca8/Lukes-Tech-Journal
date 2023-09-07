@@ -53,8 +53,21 @@ For typical DNS records including hostnames, servers, or IP addresses, the class
 
 #### DNS Cache
 
+On a computer's operating system or web browser, the term "DNS cache" refers to the temporary storage of data about past DNS lookups. A DNS lookup can be swiftly retrieved by your OS or browser if you keep a local copy of it, which makes it possible to resolve a website's URL to its matching IP much more quickly.&#x20;
 
+DNS caching happens outside of the OS and browser as well. A DNS lookup actually comprises several phases. The resolver, root server, and TLD server are all involved in a new DNS lookup. Information is collected at each stage and stored for further use. The resolver may therefore have a cached copy of the necessary data even if the local DNS cache is empty, preventing the need to perform a full DNS lookup.&#x20;
+
+### DNS Lookup
+
+[https://www.catchpoint.com/blog/domain-name-to-ip-address](https://www.catchpoint.com/blog/domain-name-to-ip-address) (good resource)
+
+
+
+
+
+### Sources :
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
-* [https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/#:\~:text=A%20zone%20file%20provides%20information,contents%20of%20a%20DNS%20cache.](https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/)
+* [https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/#:\~:text=A%20zone%20file%20provides%20information,contents%20of%20a%20DNS%20cache.](https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/)&#x20;
+* [https://www.keycdn.com/support/dns-cache](https://www.keycdn.com/support/dns-cache)&#x20;
 
