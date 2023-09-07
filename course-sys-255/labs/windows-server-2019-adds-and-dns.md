@@ -27,22 +27,23 @@ layout:
 
 A Domain Name Server (DNS) should be used in a network with many devices so you can automatically associate IP addresses with hostnames. Without a DNS established in the network, you would have to manually associate IP addresses with hostnames. A DNS server and an active directory are paired together on a single platform for ease of use and efficient management. This lab uses an active directory and domain service on a Windows Server 2019 VM.&#x20;
 
-## Tools&#x20;
+## [Tools](../tools.md)&#x20;
 
 * Server Manager
 * Active directory domain services
 * Windows Server 2019
 * DNS Manager&#x20;
 
-## Objectives:&#x20;
+## Objectives&#x20;
 
 &#x20;
 
 
 
-## Technical Terms
+## [Technical Terms](../technical-terms.md)
 
 * Domain controller&#x20;
+* DNS
 * AD Domain forest
 * DNS queries
 * DNS Record
@@ -52,8 +53,8 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 * Fully Qualified domain name (FQDN)
 * PTR record
 * A record
-* Reverse dns entry (PTR record)&#x20;
-* Domain administrator&#x20;
+* Reverse DNS entry (PTR record)&#x20;
+* Domain Administrator&#x20;
 * reverse lookup&#x20;
 * nslookup
 
@@ -72,7 +73,7 @@ Please Note: Anytime you have a new system that needs to join the domain, it nee
 
 
 
-## questions:
+## questions
 
 why is the network ID  that we created for the reverse primary lookup missing the last segment from its full IP? (10.0.5 instead of 10.0.5.0)
 
