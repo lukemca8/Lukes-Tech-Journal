@@ -45,7 +45,7 @@ For typical DNS records including hostnames, servers, or IP addresses, the class
 | Mail Exchange (MX)            | Identifies the email servers for a domain.                        |
 | Service Locator (SRV)         | Finds SIP servers, Conference servers, and other common services. |
 
-{% code title="e.g." %}
+{% code title="zone file e.g." %}
 ```
 localhost   IN	    A	    127.0.0.1
 ```
