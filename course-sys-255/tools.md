@@ -54,3 +54,5 @@ DNS test (with a name ping)- uses DNS record A to find the IP correlated to the 
 
 A program that can manage users, computers, and objects ( a data structure that can be defined by attributes/characteristics and class).&#x20;
 
+## Active Directory Domain Services&#x20;
+

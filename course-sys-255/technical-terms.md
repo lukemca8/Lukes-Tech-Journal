@@ -24,9 +24,13 @@ You look up a website in whatever browser you're using. Your OS doesn't know the
 
 DNS uses a database hierarchy containing IP addresses and each of their associated domain name.&#x20;
 
+### Zone files
+
+Zone files are text files that contain a resource record in plain text and are used to define a zone. A DNS zone is a distinct portion of the domain namespace in the Domain Name System. Usually, these zones are managed by a single delegated Domain Controller. A zone is classified either as a domain name, a domain name with multiple subdomains, or a lot of domain names. DNS zones that are in the [AD DS](tools.md#active-directory-domain-services) Windows program are known as Active Directory-integrated zones. Zone files contain instructions for DNS servers on how to handle requests for your domain, and sometimes list the data of a DNS cache. Usually, zone files are filed under the named working directory (/var/named/).
+
 ### Records
 
-A resource record (RR) is an entry in a DNS database file. Every RR has specific information on objects (variables, a data structure, a function, or a method). This data contains the following fields; domain name, time to live (TTL), address class, record type, and sometimes other fields are included depending on the RR type.&#x20;
+A resource record (RR) is the main entry in a DNS zone file. Every RR has specific information on objects (variables, a data structure, a function, or a method). This data contains the following fields; domain name, time to live (TTL), address class, record type, and sometimes other fields are included depending on the RR type.&#x20;
 
 #### Time to Live
 
