@@ -2,7 +2,9 @@
 
 * [Luke's Tech Journal](README.md)
 * [Course: NET-215](course-net-215/README.md)
-  * [Labs](course-net-215/labs.md)
+  * [Labs](course-net-215/labs/README.md)
+    * [Packet Headers](course-net-215/labs/packet-headers.md)
+    * [OSI Observation Capture](course-net-215/labs/osi-observation-capture.md)
   * [Tools](course-net-215/tools.md)
   * [Technical Terms](course-net-215/technical-terms.md)
   * [Lecture notes](course-net-215/lecture-notes.md)
