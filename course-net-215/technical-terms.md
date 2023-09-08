@@ -56,4 +56,8 @@ PLACEHOLDER &#x20;
 
 ## Network protocols&#x20;
 
-go into the basics and correlate them to the different layers in OSI and the packet headers.
+go into the basics and correlate them to the different layers in OSI and the packet headers.&#x20;
+
+ARP&#x20;
+
+ICMP&#x20;
