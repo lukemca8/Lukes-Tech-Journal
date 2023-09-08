@@ -32,4 +32,4 @@ The ARP response packet's ethernet II header is 32 bytes. The Ethernet II paddin
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Observing an ARP response packet in Wireshark</p></figcaption></figure>
 
-The ARP response packet's ethernet II footing (padding) is applied to the frame because the frame needs to reach a minimum required amount of bytes. &#x20;
+The ARP response packet's ethernet II footing (padding) is applied to the frame because the frame needs to reach a minimum required amount of bytes. The padding contains no useful information.
