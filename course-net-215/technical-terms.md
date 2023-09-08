@@ -58,6 +58,6 @@ PLACEHOLDER &#x20;
 
 go into the basics and correlate them to the different layers in OSI and the packet headers.&#x20;
 
-ARP&#x20;
+ARP - [https://www.practicalnetworking.net/series/arp/traditional-arp/](https://www.practicalnetworking.net/series/arp/traditional-arp/)&#x20;
 
 ICMP&#x20;
