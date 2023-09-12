@@ -35,3 +35,5 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 
 ## Step 1
 
+<figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption></figcaption></figure>
+
