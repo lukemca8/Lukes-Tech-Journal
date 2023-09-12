@@ -35,5 +35,17 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 
 ## Step 1
 
-<figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption><p>Three successful pings from dhcp01-luke to google.com, ad01-luke, and fw01-luke. This confirms I have properly setup my dhcp01-luke to the network.</p></figcaption></figure>
+
+## Step 2
+
+<figure><img src="https://lh6.googleusercontent.com/iauQMTBo0zZSJM5kKxP5UTiinDL_SJOliF_W4mvz6qLQjoE5_D7fzHE60SmveK2cNebKBOG3-gxvqMsFf7iVfewKYoPyMupJg3FJruGUeh1c4KOovJZf_mmyDq0Bg_dsz5uDQH3jvxrSaghZ71nbJEI" alt=""><figcaption><p>Successful ping from wks01-luke to dhcp01-luke using hostname only.</p></figcaption></figure>
+
+## Step 3
+
+<figure><img src="https://lh5.googleusercontent.com/qBWcRsMHSnxyC-2imlWxpeAd65XVfOJigGkE3djpqrjNNn-FEBtDD7LpfVm0dmZ9L29xix8JmsVjuqHk-LSf7sRGiHMkbjckVtUzGbHHXqx7h7MyIX7xvlYMoPweoJ06inQGE-S3Ue9UYKFsIZhQ4rs" alt=""><figcaption><p>Successful ssh session established as Linux user “luke” from wks01.</p></figcaption></figure>
+
+## Step 4
+
+<figure><img src="https://lh6.googleusercontent.com/7_vMyJKzdLJO-BoY8QC0bfkG1a998rj8ocIP7hmUJxWn9iI3p2ad7q7EGgU1yvSq6SWU83QcC2YmDJKWd6ysXPAa_o1jfuHSSDdhXk4t3TD2xdSQtAB4TIi1fQwYHaoUtTo8-Mo-HAVABoHhxhaixcQ" alt=""><figcaption><p>Showing my command history file from the ssh session as Linux user “luke” from wks01.</p></figcaption></figure>
 
