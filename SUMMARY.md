@@ -7,6 +7,7 @@
     * [OSI Observation Capture](course-net-215/labs/osi-observation-capture.md)
   * [Tools](course-net-215/tools.md)
   * [Technical Terms](course-net-215/technical-terms.md)
+  * [Network Protocols](course-net-215/network-protocols.md)
   * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
   * [Labs](course-sys-255/labs/README.md)
