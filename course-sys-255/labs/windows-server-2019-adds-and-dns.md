@@ -34,12 +34,6 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 * Windows Server 2019
 * DNS Manager&#x20;
 
-## Objectives&#x20;
-
-&#x20;
-
-
-
 ## [Technical Terms](../technical-terms.md)
 
 * Domain controller&#x20;
@@ -56,11 +50,38 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 * Reverse DNS entry (PTR record)&#x20;
 * Domain Administrator&#x20;
 * reverse lookup&#x20;
-* nslookup
+* nslookup&#x20;
 
-### &#x20;
+## Objectives&#x20;
 
-&#x20;Notes: Set ad01-Luke eth0 to 10.0.5.5 on default gateway 10.0.5.2&#x20;
+* Establish an internal DNS on a Windows Server 2019 in the lab environment&#x20;
+* Gain familiarity with Windows Server 2019, and ADDS management
+
+## Step 1:
+
+##
+
+##
+
+##
+
+##
+
+##
+
+##
+
+##
+
+##
+
+##
+
+##
+
+## Notes:&#x20;
+
+Set ad01-Luke eth0 to 10.0.5.5 on default gateway 10.0.5.2&#x20;
 
 This is an internal domain we are making. &#x20;
 

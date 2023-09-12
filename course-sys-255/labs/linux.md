@@ -33,5 +33,5 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 * Establish an SSH session as Linux user "luke" from wks01 in PowerShell.
 * Experiment with the CentOS Linux directory with bash commands on the SSH session.
 
-## Step 1:
+## Step 1
 
