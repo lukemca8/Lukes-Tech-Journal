@@ -57,11 +57,19 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 * Establish an internal DNS on a Windows Server 2019 in the lab environment&#x20;
 * Gain familiarity with Windows Server 2019, and ADDS management
 
-## Step 1:
+## Step 1
 
-##
+<figure><img src="https://lh3.googleusercontent.com/fMt2e5ob3dTEHBuUesU2_XHbAo3BnYiPtCxHQCx-OtiGrpFMMUZtNO3Oqg9FN8eym4R4bWs45TlGl96aSG5Owc8epj9_PLzM29gSQBGqOOhjpctOpvq41pPcDt1V09K1-T7JktiWmxRIPrsyY9m9bSA" alt=""><figcaption><p>The image above shows that my windows computer successfully joined the domain.</p></figcaption></figure>
 
-##
+## Step 2
+
+<figure><img src="https://lh4.googleusercontent.com/4lehT2rpcX6y5HVpdr2MwRYp1XufSfWd9GPxxL9mWS-Ac2uv9_8Iz_e3TJOPOoxVHPC1uxL9t-PMmm5f3UUTJe4BvwMm40p7j61Edj2iH2a6R86XPJIvHsRLiuvWbWzvGtYWjiNArjOiZAPIGtEKrUo" alt=""><figcaption><p>The image above shows the two users I created with the active directory.</p></figcaption></figure>
+
+## Step 3&#x20;
+
+<figure><img src="https://lh4.googleusercontent.com/edpid3SMziaqfMr4PLrX1lM1UB8qEd50ca0aQONWYfWJB1LDP9YQibIc8N300QGF-T3qsLmMq2tW7aKI2GZBchiT2GgnANDlQ860gJXAtaLZqWJNLzfMOwnfkYHbYz9RpVpNhhSGRidKRSbYh7j-qC4" alt=""><figcaption><p>The image above contains 5 commands verifying the lab’s completion. Nslookup 10.0.5.2 performs a reverse DNS query. Nslookup fw01-luke performs a query by host name. Nslookup luke.local performs a Domain DNS server search. Whoami shows that im logged into the domain as a regular user. Hostname shows what computer I’m on. </p></figcaption></figure>
+
+
 
 ##
 

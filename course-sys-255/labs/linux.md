@@ -49,3 +49,10 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 
 <figure><img src="https://lh6.googleusercontent.com/7_vMyJKzdLJO-BoY8QC0bfkG1a998rj8ocIP7hmUJxWn9iI3p2ad7q7EGgU1yvSq6SWU83QcC2YmDJKWd6ysXPAa_o1jfuHSSDdhXk4t3TD2xdSQtAB4TIi1fQwYHaoUtTo8-Mo-HAVABoHhxhaixcQ" alt=""><figcaption><p>Showing my command history file from the ssh session as Linux user “luke” from wks01.</p></figcaption></figure>
 
+## Step 5
+
+Part A: One pro for security with the history file is that you can see if any suspicious commands are being used by someone. A con would be someone looking at commands that have sensitive information about a company. A hacker could possibly see commands with a hacked ssh session.
+
+Part B: The history -c command clears your .bash\_history file
+
+\
