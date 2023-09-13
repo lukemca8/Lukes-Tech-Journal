@@ -23,6 +23,8 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 * SSH&#x20;
 * Directory
 * Nmtui
+* PuTTY
+* YUM
 
 ## [Technical Terms](../technical-terms.md)&#x20;
 
@@ -97,7 +99,7 @@ On the ssh session, I explore the dhcp01-luke directory with various commands in
 | <mark style="color:green;">`cat`</mark>`*file here*`                     | Shows a file's data in a readable way.                                                                                       |
 | <mark style="color:green;">`tree`</mark>                                 | Displays the list of files in the current directory.                                                                         |
 
-I created a directory under the home directory for my user called SYS-255 with the `mkdir` command. Using sudo, I install the "tree" package:`sudo` [`yum`](../tools.md#yum) `install tree` . The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;
+I created a directory under the home directory for my user called SYS-255 with the `mkdir` command. Using sudo, I install the "tree" package:`sudo yum install tree` . The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A tree on dhcp01-luke.</p></figcaption></figure>
 
