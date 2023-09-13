@@ -27,6 +27,7 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 ## [Technical Terms](../technical-terms.md)&#x20;
 
 * Bash
+* Wheel
 
 ## Objectives&#x20;
 
@@ -35,17 +36,11 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 * Establish an [SSH session](../tools.md#ssh) as Linux user "luke" from wks01 in PowerShell.
 * Experiment with the CentOS Linux [directory](../tools.md#directory) with [bash](../technical-terms.md#bash) commands on the SSH session.
 
-###
-
-###
-
 ## Step 1&#x20;
 
 Using vSphere, I configured CentOS Linux dhcp01 to be on my internal LAN. &#x20;
 
-After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application and did network configuration.
-
-
+After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application and did network configuration. I also changed the name of the host from dhcp01 to dhcp01-luke.
 
 | IPv4/Subnet Mask | Default Gateway     | DNS server | Search Domains |
 | ---------------- | ------------------- | ---------- | -------------- |
@@ -53,13 +48,17 @@ After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application a
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>nmtui</p></figcaption></figure>
 
-###
-
-###
+I added user "luke" to dhcp01-luke and made it part of the [wheel](../technical-terms.md#wheel) group.&#x20;
 
 ### Deliverable 1
 
+After completing the basic configurations for the system, I tested it to make sure it could communicate with the local network and WAN.&#x20;
+
 <figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption><p>Three successful pings from dhcp01-luke to google.com, ad01-luke, and fw01-luke. This confirms I have properly setup my dhcp01-luke to the network.</p></figcaption></figure>
+
+## Step 2
+
+
 
 ### Deliverable 2
 

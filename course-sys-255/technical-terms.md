@@ -61,10 +61,6 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 [https://www.catchpoint.com/blog/domain-name-to-ip-address](https://www.catchpoint.com/blog/domain-name-to-ip-address) (good resource)
 
-
-
-
-
 ### Sources&#x20;
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
@@ -73,5 +69,11 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 ## Bash
 
-Scripting/command language, used in Linux shells.
+Scripting/command language, used in Linux shells.&#x20;
+
+## Wheel&#x20;
+
+In Unix systems, a wheel is a user account with a wheel bit, which designates that user to have special system privileges.&#x20;
+
+A wheel group is a group of wheel users that have access to the sudo command, which grants super user privileges. Wheel groups are seen on mostly Berkeley Software Distribution (BSD) systems.
 
