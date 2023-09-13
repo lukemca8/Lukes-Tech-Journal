@@ -49,7 +49,7 @@ After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application a
 | ---------------- | ------------------- | ---------- | -------------- |
 | 10.0.5.3/24      | 10.0.5.2 (firewall) | 10.0.5.5   | luke.local     |
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Nmtui</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Nmtui</p></figcaption></figure>
 
 I added user "luke" to dhcp01-luke and made it part of the [wheel](../technical-terms.md#wheel) group.&#x20;
 
@@ -103,7 +103,7 @@ On the ssh session, I explore the dhcp01-luke directory with various commands in
 
 I created a directory under the home directory for my user called SYS-255 with the `mkdir` command. Using sudo, I install the "tree" package:`sudo yum install tree` . The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>A tree on dhcp01-luke.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>A tree on dhcp01-luke.</p></figcaption></figure>
 
 ### Deliverable 4
 

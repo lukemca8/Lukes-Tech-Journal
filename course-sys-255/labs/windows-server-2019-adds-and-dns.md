@@ -67,11 +67,13 @@ On vSphere, I configured ad01's network adapter to my internal LAN. I logged int
 
 Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local server manager dashboard looks like this:&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
 
-Just to make sure all of my settings are correct, I did a quick test with Powershell:
+Just to make sure all of my settings are correct, I did a quick test with Powershell&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
+(note: `whoami`should show "ad01-Luke\administrator", but I took this screenshot after completing the lab while logged in as the Domain Administrator, not as the Local Administrator.)
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
 
 ## Step 2
 
@@ -93,9 +95,9 @@ _The server manager displays an error: "A delegation for this DNS server cannot 
 
 ## Step 4&#x20;
 
-After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory), instead of the local administrator (credentials in Windows OS)
+After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory) instead of the local administrator (credentials in Windows OS)
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
 
 
 

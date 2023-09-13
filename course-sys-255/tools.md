@@ -24,7 +24,7 @@ A free commercial-grade network firewall software that was based on FreeBSD OS w
 
 A collection of virtualization products, used for creating and operating virtual machine infrastructure. A very cost-effective way to maintain your servers. For example, instead of having multiple physical servers, you could run multiple virtual servers on one machine. The virtual machines operate on a remote cloud server.     &#x20;
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>vSphere HTML client </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>vSphere HTML client </p></figcaption></figure>
 
 ## Shells
 
