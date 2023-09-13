@@ -18,6 +18,7 @@
 | <mark style="color:green;">`yum install`</mark>`*package/software here*` | Uses the [YUM](tools.md#yum) tool to install a package.                                                                      |
 | <mark style="color:green;">`exit`</mark>                                 | Exits the shell you're in.                                                                                                   |
 | <mark style="color:green;">`history`</mark>                              | Shows the history of commands typed.                                                                                         |
+| <mark style="color:green;">`history -c`</mark>                           | Clears command history.                                                                                                      |
 | <mark style="color:green;">`ls -la`</mark>                               | Lists hidden files in the pwd.                                                                                               |
 | <mark style="color:green;">`cat`</mark>`*file here*`                     | Shows a file's data in a readable way.                                                                                       |
 | <mark style="color:green;">`tree`</mark>                                 | Displays the list of files in the current directory.                                                                         |

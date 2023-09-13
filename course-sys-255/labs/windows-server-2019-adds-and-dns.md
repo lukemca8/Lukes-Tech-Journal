@@ -59,6 +59,14 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 
 ## Step 1
 
+On vSphere, I configured ad01's network adapter to my internal LAN. I logged into ad01 as a local administrator and set a password for the account. Now that I'm logged into the server, I change the ethernet adapter options for IPv4 properties:
+
+| IP address | Netmask       | Default gateway | DNS      |
+| ---------- | ------------- | --------------- | -------- |
+| 10.0.5.5   | 255.255.255.0 | 10.0.5.2        | 10.0.5.2 |
+
+Also, I changed the hostname to ad01-luke.
+
 <figure><img src="https://lh3.googleusercontent.com/fMt2e5ob3dTEHBuUesU2_XHbAo3BnYiPtCxHQCx-OtiGrpFMMUZtNO3Oqg9FN8eym4R4bWs45TlGl96aSG5Owc8epj9_PLzM29gSQBGqOOhjpctOpvq41pPcDt1V09K1-T7JktiWmxRIPrsyY9m9bSA" alt=""><figcaption><p>The image above shows that my windows computer successfully joined the domain.</p></figcaption></figure>
 
 ## Step 2

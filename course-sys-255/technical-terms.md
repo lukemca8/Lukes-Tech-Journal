@@ -14,10 +14,6 @@ layout:
 
 # Technical Terms
 
-## Upstream Gateway&#x20;
-
-An upstream gateway is the last network device until the next network segment in the architecture.
-
 ## Domain Name System&#x20;
 
 You look up a website in whatever browser you're using. Your OS doesn't know the IP address associated with the website's domain name, so it can't load the page. Luckily, the Domain Name System (DNS) is here to save the day!&#x20;
@@ -65,7 +61,11 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
 * [https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/#:\~:text=A%20zone%20file%20provides%20information,contents%20of%20a%20DNS%20cache.](https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/)&#x20;
-* [https://www.keycdn.com/support/dns-cache](https://www.keycdn.com/support/dns-cache)&#x20;
+* [https://www.keycdn.com/support/dns-cache](https://www.keycdn.com/support/dns-cache) &#x20;
+
+## Upstream Gateway&#x20;
+
+An upstream gateway is the last network device until the next network segment in the architecture.
 
 ## Bash
 
