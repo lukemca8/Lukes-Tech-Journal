@@ -65,7 +65,83 @@ On vSphere, I configured ad01's network adapter to my internal LAN. I logged int
 | ---------- | ------------- | --------------- | -------- |
 | 10.0.5.5   | 255.255.255.0 | 10.0.5.2        | 10.0.5.2 |
 
-Also, I changed the hostname to ad01-luke.
+Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local server manager dashboard looks like this:&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
+
+Just to make sure all of my settings are correct, I did a quick test with Powershell:
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
+
+## Step 2
+
+Next, I open the server manager, select "manage" at the top right, and click "Add Roles and Features". It then takes me through an installation setup wizard. I leave everything as default except the following:&#x20;
+
+Active Directory Domain Services->Add Features-> and I then select Active Directory Domain Services.&#x20;
+
+Select restart destination server-> and select yes on the confirmation box.&#x20;
+
+_It takes a little bit for the installation to complete._&#x20;
+
+After installation, next to the flag on the server manager dashboard, there is a yellow warning symbol. I expand it and click "promote this server to a domain controller".  This configures the ad01-luke server to be the primary domain controller for the upcoming domain luke.local.
+
+## Step 3
+
+Next, while in the Deployment Configuration section under the Active Directory Domain Services Configuration Wizard, I added a new forest and specified the root domain name as luke.local. After that, I created a DSRM password. Directory Services Restore Mode would be used if the directory needs to be recovered from an error. A reboot is required after the installation of the forest. &#x20;
+
+_The server manager displays an error: "A delegation for this DNS server cannot be created because the authoritative parent zone cannot be found..." This error pops up after installation because I set the .local as a top-level domain. Genuine TLDs include .com, .gov, .edu, and .net. So the server manager is kind of confused about what I'm doing. This is just an internal domain, so it's fine to keep it like this._
+
+## Step 4&#x20;
+
+After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory), instead of the local administrator (credentials in Windows OS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <figure><img src="https://lh3.googleusercontent.com/fMt2e5ob3dTEHBuUesU2_XHbAo3BnYiPtCxHQCx-OtiGrpFMMUZtNO3Oqg9FN8eym4R4bWs45TlGl96aSG5Owc8epj9_PLzM29gSQBGqOOhjpctOpvq41pPcDt1V09K1-T7JktiWmxRIPrsyY9m9bSA" alt=""><figcaption><p>The image above shows that my windows computer successfully joined the domain.</p></figcaption></figure>
 
