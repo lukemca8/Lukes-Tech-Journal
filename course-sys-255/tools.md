@@ -42,14 +42,6 @@ Cmd or command prompt is an application used to execute commands. These commands
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>empty cmd window </p></figcaption></figure>
 
-## Commands
-
-### Ping&#x20;
-
-Connectivity test (with an IP ping) - Is my default gateway setup correctly? Is my eth0 interface set up properly?
-
-DNS test (with a name ping)- uses DNS record A to find the IP correlated to the domain. &#x20;
-
 ## Active Directory&#x20;
 
 A program that can manage users, computers, and objects ( a data structure that can be defined by attributes/characteristics and class).&#x20;
@@ -84,4 +76,4 @@ SSH application&#x20;
 
 ## YUM&#x20;
 
-Yellow Dog Updater, Modified is a package/software installer.&#x20;
+Yellow Dog Updater Modified is a package/software installer.&#x20;

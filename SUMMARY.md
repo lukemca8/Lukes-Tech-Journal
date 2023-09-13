@@ -14,6 +14,7 @@
     * [Linux](course-sys-255/labs/linux.md)
     * [Windows Server 2019, ADDS, and DNS](course-sys-255/labs/windows-server-2019-adds-and-dns.md)
     * [Virtual Firewall and Windows 10 Configuration](course-sys-255/labs/virtual-firewall-and-windows-10-configuration.md)
+  * [Commands](course-sys-255/commands.md)
   * [Tools](course-sys-255/tools.md)
   * [Technical Terms](course-sys-255/technical-terms.md)
   * [Lecture Notes](course-sys-255/lecture-notes.md)
