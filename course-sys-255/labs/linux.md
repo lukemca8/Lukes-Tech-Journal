@@ -54,11 +54,13 @@ I added user "luke" to dhcp01-luke and made it part of the [wheel](../technical-
 
 After completing the basic configurations for the system, I tested it to make sure it could communicate with the local network and WAN.&#x20;
 
-<figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption><p>Three successful pings from dhcp01-luke to google.com, ad01-luke, and fw01-luke. This confirms I have properly setup my dhcp01-luke to the network.</p></figcaption></figure>
+<figure><img src="https://lh5.googleusercontent.com/mCvDnXsnKK3_-oRsKKA6a7uNhmJasHzEqCv-sKkacO_oq5it4Jr_hWTmHj6FejnD0zF8HH3A_fLtWbnWpxjh1l96SfyRpHzgb4dXJljKdvjuWmo3sVwgjjIEnfg0BDfyNnIqdesKO7LrNRS_f-4w9o4" alt=""><figcaption><p>Logged in as user luke, I execute three successful pings  to google.com, ad01-luke, and fw01-luke. This confirms I have properly setup dhcp01-luke.</p></figcaption></figure>
 
 ## Step 2
 
+From ad01-luke, I use the DNS manager to add an A and PTR record for dhcp01-luke.&#x20;
 
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>A record for dhcp01-luke.</p></figcaption></figure>
 
 ### Deliverable 2
 
