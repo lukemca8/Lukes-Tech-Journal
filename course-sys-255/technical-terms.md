@@ -75,5 +75,8 @@ Scripting/command language, used in Linux shells.&#x20;
 
 In Unix systems, a wheel is a user account with a wheel bit, which designates that user to have special system privileges.&#x20;
 
-A wheel group is a group of wheel users that have access to the sudo command, which grants super user privileges. Wheel groups are seen on mostly Berkeley Software Distribution (BSD) systems.
+A wheel group is a group of wheel users that have access to the sudo command, which grants super user privileges. Wheel groups are seen on mostly Berkeley Software Distribution (BSD) systems.&#x20;
 
+## Tree&#x20;
+
+The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;

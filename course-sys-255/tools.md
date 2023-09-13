@@ -60,7 +60,7 @@ A program that can manage users, computers, and objects ( a data structure that 
 
 Distribution of Linux.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
 
 ## SSH
 
@@ -70,11 +70,18 @@ Manage computers remotely from a shell.&#x20;
 
 Basic network configuration application within Linux kernel. It's opened by the command nmtui.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>nmtui gui</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>nmtui gui</p></figcaption></figure>
 
 ## Directory&#x20;
 
 A system for filing data in an OS. Contains the most essential files for the OS, and then those files are divided into subsections or folders. Inside the folders are more files that have specialized functions or unique data.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>CentOS Linux kernel directory showing all the main files in the directory.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>CentOS Linux kernel directory showing all the main files in the directory.</p></figcaption></figure>
 
+## PuTTY&#x20;
+
+SSH application&#x20;
+
+## YUM&#x20;
+
+Yellow Dog Updater, Modified is a package/software installer.&#x20;
