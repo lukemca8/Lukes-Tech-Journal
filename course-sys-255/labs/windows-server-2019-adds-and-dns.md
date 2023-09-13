@@ -99,7 +99,9 @@ After rebooting the server, I log in as the Domain Administrator (credentials in
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
 
+_After logging in, I noticed the ad01-luke server's network configuration has changed. The DNS server goes to 127.0.0.1 (local loopback adapter for ad01-luke). This means that DNS queries handled outside the local network are forwarded to fw01-luke, and then forwarded to its DNS Server._
 
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p><em>ad01-luke server network configuration changes</em></p></figcaption></figure>
 
 
 
