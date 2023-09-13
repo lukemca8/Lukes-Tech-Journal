@@ -67,6 +67,8 @@ From ad01-luke, I use the DNS manager to add an A and PTR record for dhcp01-luke
 
 ### Deliverable 2
 
+To test that the record was added correctly, I ping dhcp01-luke from wks01-luke.
+
 <figure><img src="https://lh6.googleusercontent.com/iauQMTBo0zZSJM5kKxP5UTiinDL_SJOliF_W4mvz6qLQjoE5_D7fzHE60SmveK2cNebKBOG3-gxvqMsFf7iVfewKYoPyMupJg3FJruGUeh1c4KOovJZf_mmyDq0Bg_dsz5uDQH3jvxrSaghZ71nbJEI" alt=""><figcaption><p>Successful ping from wks01-luke to dhcp01-luke using hostname only.</p></figcaption></figure>
 
 ## Step 3&#x20;
