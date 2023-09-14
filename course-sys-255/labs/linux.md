@@ -103,7 +103,7 @@ On the ssh session, I explore the dhcp01-luke directory with various commands in
 
 I created a directory under the home directory for my user called SYS-255 with the `mkdir` command. Using sudo, I install the "tree" package:`sudo yum install tree` . The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>A tree on dhcp01-luke.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>A tree on dhcp01-luke.</p></figcaption></figure>
 
 ### Deliverable 4
 

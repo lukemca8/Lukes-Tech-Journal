@@ -67,13 +67,13 @@ On vSphere, I configured ad01's network adapter to my internal LAN. I logged int
 
 Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local server manager dashboard looks like this:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
 
 Just to make sure all of my settings are correct, I did a quick test with Powershell&#x20;
 
 (note: `whoami`should show "ad01-Luke\administrator", but I took this screenshot after completing the lab while logged in as the Domain Administrator, not as the Local Administrator.)
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
 
 ## Step 2
 
@@ -97,27 +97,29 @@ _The server manager displays an error: "A delegation for this DNS server cannot 
 
 After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory) instead of the local administrator (credentials in Windows OS)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
 
 _After logging in, I noticed the ad01-luke server's network configuration has changed. The DNS server goes to 127.0.0.1 (local loopback adapter for ad01-luke). This means that DNS queries handled outside the local network are forwarded to fw01-luke, and then forwarded to its DNS Server._
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p><em>ad01-luke server network configuration changes</em></p></figcaption></figure>
 
+At this point in the lab, I can't ping fw01-luke by its hostname from ad01-luke, only Ipv4. To fix that, I'm going to make a DNS record on the server. This record will let anyone who uses ad01-luke as a DNS server ping the domain name fw01-luke.luke.local.&#x20;
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Creating the A record for fw01-luke. Checking the "Create associated pointer (PTR) record" will automatically create a PTR record. </p></figcaption></figure>
 
+Currently, the PTR record is not in effect because there isn't a reverse lookup zone. So, I added a reverse primary lookup for the IP addresses in my LAN. To do this, I right-clicked on the "reverse lookup zone" folder under the DNS manager and then clicked on "New Zone".  &#x20;
 
+This brings up the New Zone Wizard, which prompts for the Network ID, and the reverse lookup zone name.
 
+<figure><img src="https://lh6.googleusercontent.com/0dMs9igxTjgt4Lrgq5glSNK_jgluoA9_nHwT3aWLJzc04VciHB-gtPTvM_mcQ7CWMPFSxV570JbAmtsp5BU6S6c52_DbHe674kdV0Ya9HXVfnpE3X0cnWWPCYqcvcpY3e4V2rolUl7bIFnkDTXn8Gw" alt=""><figcaption><p>New Zone Wizard</p></figcaption></figure>
 
+Now the PTR record created previously will automatically go under the new reverse lookup zone. Also, from now on, anytime an A record is created for a device, a PTR record will be put under the new reverse lookup zone too.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
 
+## Step 5
 
-
-
-
-
-
-
-
+CREATE NAMED DOMAIN USERS ON AD01
 
 
 

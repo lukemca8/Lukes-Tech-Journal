@@ -6,7 +6,7 @@ description: Lab 2-1
 
 
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>ipconfig/all in cmd  </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>ipconfig/all in cmd  </p></figcaption></figure>
 
 Default gateway is 192.168.3.250&#x20;
 
