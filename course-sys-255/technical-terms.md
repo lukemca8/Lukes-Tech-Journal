@@ -20,6 +20,18 @@ You look up a website in whatever browser you're using. Your OS doesn't know the
 
 DNS uses a database hierarchy containing IP addresses and each of their associated domain name.&#x20;
 
+### Common DNS terms:
+
+* Domain controller&#x20;
+* DNS
+* AD Domain forest
+* DNS queries
+* DNS Record
+* Reverse Lookup Zone
+* Forward lookup zones
+* Fully Qualified domain name (FQDN)&#x20;
+* Domain Administrator&#x20;
+
 ### Zone files
 
 Zone files are text files that contain a resource record in plain text and are used to define a zone. A DNS zone is a distinct portion of the domain namespace in the Domain Name System. Usually, these zones are managed by a single delegated Domain Controller. A zone is classified either as a domain name, a domain name with multiple subdomains, or a lot of domain names. DNS zones that are in the [AD DS](tools.md#active-directory-domain-services) Windows program are known as Active Directory-integrated zones. Zone files contain instructions for DNS servers on how to handle requests for your domain, and sometimes list the data of a DNS cache. Usually, zone files are filed under the named working directory (/var/named/).
@@ -57,6 +69,8 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 [https://www.catchpoint.com/blog/domain-name-to-ip-address](https://www.catchpoint.com/blog/domain-name-to-ip-address) (good resource)
 
+
+
 ### Sources&#x20;
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
@@ -80,3 +94,7 @@ A wheel group is a group of wheel users that have access to the sudo command, wh
 ## Tree&#x20;
 
 The tree is a program that provides a depth-indented listing of files from a recursive directory. The tree displays the list of files in the current directory without any arguments.&#x20;
+
+## Network ID
+
+Used to designate a specific network or host, it is usually represented with the beginning part of an IP address.&#x20;

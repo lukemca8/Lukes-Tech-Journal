@@ -14,10 +14,6 @@ layout:
 
 # Tools
 
-## [pfSense](https://www.pfsense.org/)
-
-A free commercial-grade network firewall software that was based on FreeBSD OS with a custom kernel. It has a web interface for configuration. No coding knowledge of any kind is needed with configuration, just point and click. It is just the software side of a firewall, so you should purchase or build your own hardware.&#x20;
-
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
 
 ## [vSphere](https://www.vmware.com/products/vsphere.html)
@@ -81,3 +77,9 @@ Yellow Dog Updater Modified is a package/software installer.&#x20;
 ## nslookup
 
 Name server lookup, often known as nslookup, enables you to inquire about your DNS service. The program is often used to check for DNS records, retrieve IP address mapping information, and obtain a domain name via your command line interface (CLI). This data is obtained from the DNS cache of the DNS server of your choice.
+
+Server Manager
+
+Active directory domain services
+
+## Windows Server 2019
