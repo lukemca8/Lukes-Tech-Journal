@@ -53,7 +53,7 @@ LAN - 10.0.5.2/24 &#x20;
 
 I'll come back to fw01 through the Pfsense web interface for further configuration after setting up a Windows 10 machine.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>fw01</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>fw01</p></figcaption></figure>
 
 ## Step 2&#x20;
 
@@ -65,7 +65,7 @@ Wks01-Luke only has a default champuser username and default password, so I set 
 
 I also changed the wks01-luke Ipv4 and preferred DNS from the assigned default addresses.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wks01-Luke Ipv4 setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wks01-Luke Ipv4 setup</p></figcaption></figure>
 
 ## Step 3 &#x20;
 
@@ -78,7 +78,7 @@ Next, I logged into the pfSense web interface for the first time and went throug
 
 I also changed the root password for the pfSense client from the default.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense setup wizard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense setup wizard</p></figcaption></figure>
 
 ## Step 4
 
