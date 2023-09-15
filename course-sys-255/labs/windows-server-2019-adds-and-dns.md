@@ -25,7 +25,7 @@ layout:
 
 ## Discussion
 
-A Domain Name Server (DNS) should be used in a network with many devices so you can automatically associate IP addresses with hostnames. Without a DNS established in the network, you would have to manually associate IP addresses with hostnames. A DNS server and an active directory are paired together on a single platform for ease of use and efficient management. This lab uses an active directory and domain service on a Windows Server 2019 VM.&#x20;
+A [Domain Name Server (DNS)](../technical-terms.md#domain-name-system) should be used in a network with many devices so you can automatically associate IP addresses with hostnames. Without a DNS established in the network, you would have to manually associate IP addresses with hostnames. A DNS server and an [active directory](../tools.md#active-directory) are paired together on a single platform for ease of use and efficient management. This lab uses an active directory and domain service on a [Windows Server 2019](../tools.md#windows-server-2019) VM.&#x20;
 
 ## [Tools](../tools.md)&#x20;
 
@@ -55,7 +55,7 @@ A Domain Name Server (DNS) should be used in a network with many devices so you 
 ## Objectives&#x20;
 
 * Establish an internal DNS on a Windows Server 2019 in the lab environment&#x20;
-* Gain familiarity with Windows Server 2019, and ADDS management
+* Gain familiarity with Windows Server 2019, and [ADDS](../tools.md#active-directory-domain-services) management
 
 ## Step 1
 

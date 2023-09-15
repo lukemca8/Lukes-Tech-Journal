@@ -14,6 +14,10 @@ layout:
 
 # Tools
 
+## pfSense
+
+Web client that lets you manage a firewall.
+
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
 
 ## [vSphere](https://www.vmware.com/products/vsphere.html)
@@ -42,7 +46,9 @@ Cmd or command prompt is an application used to execute commands. These commands
 
 A program that can manage users, computers, and objects ( a data structure that can be defined by attributes/characteristics and class).&#x20;
 
-## Active Directory Domain Services &#x20;
+## Active Directory Domain Services
+
+placeholder &#x20;
 
 ## CentOS Linux
 
@@ -78,8 +84,10 @@ Yellow Dog Updater Modified is a package/software installer.&#x20;
 
 Name server lookup, often known as nslookup, enables you to inquire about your DNS service. The program is often used to check for DNS records, retrieve IP address mapping information, and obtain a domain name via your command line interface (CLI). This data is obtained from the DNS cache of the DNS server of your choice.
 
-Server Manager
+## Server Manager
 
-Active directory domain services
+placeholder
 
 ## Windows Server 2019
+
+placeholder
