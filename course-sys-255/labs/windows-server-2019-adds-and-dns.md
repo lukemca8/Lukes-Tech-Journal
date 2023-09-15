@@ -115,15 +115,15 @@ This brings up the New Zone Wizard, which prompts for the Network ID, and the re
 
 Now the PTR record created previously will automatically go under the new reverse lookup zone. Also, from now on, anytime an A record is created for a device, a PTR record will be put under the new reverse lookup zone too.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
 
 ## Step 5
 
 Next, I created a named domain administrator account.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
 
@@ -158,62 +158,25 @@ Now back on ad01-luke, I make sure that wks01-luke was added to the domain.
 
 <figure><img src="https://lh3.googleusercontent.com/fMt2e5ob3dTEHBuUesU2_XHbAo3BnYiPtCxHQCx-OtiGrpFMMUZtNO3Oqg9FN8eym4R4bWs45TlGl96aSG5Owc8epj9_PLzM29gSQBGqOOhjpctOpvq41pPcDt1V09K1-T7JktiWmxRIPrsyY9m9bSA" alt=""><figcaption><p>The image above shows that wks01-luke successfully joined the domain.</p></figcaption></figure>
 
-## Step 2
+### Deliverable 2
+
+I made sure the two new users were added.
 
 <figure><img src="https://lh4.googleusercontent.com/4lehT2rpcX6y5HVpdr2MwRYp1XufSfWd9GPxxL9mWS-Ac2uv9_8Iz_e3TJOPOoxVHPC1uxL9t-PMmm5f3UUTJe4BvwMm40p7j61Edj2iH2a6R86XPJIvHsRLiuvWbWzvGtYWjiNArjOiZAPIGtEKrUo" alt=""><figcaption><p>The image above shows the two users I created with the active directory.</p></figcaption></figure>
 
-## Step 3&#x20;
+## Step 7
 
-<figure><img src="https://lh4.googleusercontent.com/edpid3SMziaqfMr4PLrX1lM1UB8qEd50ca0aQONWYfWJB1LDP9YQibIc8N300QGF-T3qsLmMq2tW7aKI2GZBchiT2GgnANDlQ860gJXAtaLZqWJNLzfMOwnfkYHbYz9RpVpNhhSGRidKRSbYh7j-qC4" alt=""><figcaption><p>The image above contains 5 commands verifying the lab’s completion. Nslookup 10.0.5.2 performs a reverse DNS query. Nslookup fw01-luke performs a query by host name. Nslookup luke.local performs a Domain DNS server search. Whoami shows that im logged into the domain as a regular user. Hostname shows what computer I’m on. </p></figcaption></figure>
+I then logged into the domain through Wks01-luke as a regular, nonprivileged, domain user.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>logging in</p></figcaption></figure>
 
+### Deliverable 3
 
-##
+For a final test to make sure the domain is running correctly, and I successfully completed all of the previous steps, I ran multiple commands on Powershell from wks01-luke.
 
-##
+<figure><img src="https://lh4.googleusercontent.com/edpid3SMziaqfMr4PLrX1lM1UB8qEd50ca0aQONWYfWJB1LDP9YQibIc8N300QGF-T3qsLmMq2tW7aKI2GZBchiT2GgnANDlQ860gJXAtaLZqWJNLzfMOwnfkYHbYz9RpVpNhhSGRidKRSbYh7j-qC4" alt=""><figcaption><p>powershell commands</p></figcaption></figure>
 
-##
+The image above contains 5 commands verifying the lab’s completion. `Nslookup 10.0.5.2` performs a reverse DNS query. `Nslookup fw01-luke` performs a query by hostname. `Nslookup luke.local` performs a Domain DNS server search. `Whoami` shows that I'm logged into the domain as a regular user. `Hostname` shows what computer I’m on.&#x20;
 
-##
+## Reflection
 
-##
-
-##
-
-##
-
-##
-
-## Notes:&#x20;
-
-Set ad01-Luke eth0 to 10.0.5.5 on default gateway 10.0.5.2&#x20;
-
-This is an internal domain we are making. &#x20;
-
-Please note this difference: Domain Admins have power over items within an AD domain, whereas Local Admins have power over items within the singular installed OS and not within AD.  &#x20;
-
-Please Note: Anytime you have a new system that needs to join the domain, it needs to refer to the domain’s DNS server.  This concept may trip you up in follow on assessments if you neglect this …
-
-\
-
-
-
-
-## questions
-
-why is the network ID  that we created for the reverse primary lookup missing the last segment from its full IP? (10.0.5 instead of 10.0.5.0)
-
-\
-
-
-
-
-
-
-&#x20;
-
-
-
-
-
-&#x20;&#x20;
