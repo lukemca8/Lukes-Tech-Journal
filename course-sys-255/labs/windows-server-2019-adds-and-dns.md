@@ -65,13 +65,13 @@ On vSphere, I configured ad01's network adapter to my internal LAN. I logged int
 | ---------- | ------------- | --------------- | -------- |
 | 10.0.5.5   | 255.255.255.0 | 10.0.5.2        | 10.0.5.2 |
 
-Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local server manager dashboard looks like this:&#x20;
+Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local [server manager](../tools.md#server-manager) dashboard looks like this:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
 
 Just to make sure all of my settings are correct, I did a quick test with Powershell&#x20;
 
-(note: `whoami`should show "ad01-Luke\administrator", but I took this screenshot after completing the lab while logged in as the Domain Administrator, not as the Local Administrator.)
+(note: `whoami`should show "ad01-Luke\administrator", but I took this screenshot after completing the lab while logged in as the [Domain Administrator](../technical-terms.md#common-dns-terms), not as the Local Administrator.)
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
 
