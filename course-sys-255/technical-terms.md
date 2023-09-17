@@ -69,13 +69,40 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 [https://www.catchpoint.com/blog/domain-name-to-ip-address](https://www.catchpoint.com/blog/domain-name-to-ip-address) (good resource)
 
-
-
 ### Sources&#x20;
 
 * [https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156](https://techdocs.f5.com/kb/en-us/archived\_products/3-dns/manuals/product/3dns4\_5ref/3dns\_resourcerecs.html#1000156)&#x20;
 * [https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/#:\~:text=A%20zone%20file%20provides%20information,contents%20of%20a%20DNS%20cache.](https://learning.mlytics.com/domain-name-system/dns-record-what-is-a-zone-file/)&#x20;
 * [https://www.keycdn.com/support/dns-cache](https://www.keycdn.com/support/dns-cache) &#x20;
+
+## DHCP
+
+### DHCP process
+
+In order for a computer to have its IP assigned automatically, the DHCP process is used.
+
+#### DHCPDiscover&#x20;
+
+Looks for a DHCP server by sending a broadcast.&#x20;
+
+#### DHCPOffer&#x20;
+
+The DHCP server responds to this broadcast and offers an address&#x20;
+
+#### DHCPRequest&#x20;
+
+The host requests to lease the address. Once the lease is up, the host will have to do this process over again for a new address.&#x20;
+
+#### DHCPACK&#x20;
+
+DHCP server sends the IP addresses to the host (IPv4, default gateway, DNS server
+
+### Ports used&#x20;
+
+#### UDP Port&#x20;
+
+* Client: Port 68
+* Server: Port 67
 
 ## Upstream Gateway&#x20;
 
