@@ -43,7 +43,10 @@ It is extremely uncommon to come across a business that is entirely Windows, Mac
 
 Using vSphere, I configured CentOS Linux dhcp01 to be on my internal LAN. &#x20;
 
-After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application and did network configuration. I also changed the name of the host from dhcp01 to dhcp01-luke.
+After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application and did network configuration. Open nmtui by typing nmtui on the command line. Press enter on edit connection. Press enter on the ethernet interface. Use your arrow keys to navigate to the box next to “IPv4 configuration”. Press enter, and select manual. Navigate to the box below it titled “addresses” and enter the preferred IPv4 address. Enter the default gateway and DNS server using the same mechanics as described above.
+
+\
+&#x20;I also changed the name of the host from dhcp01 to dhcp01-luke.
 
 | IPv4/Subnet Mask | Default Gateway     | DNS server | Search Domains |
 | ---------------- | ------------------- | ---------- | -------------- |
