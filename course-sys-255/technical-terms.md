@@ -81,6 +81,10 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 In order for a computer to have its IP assigned automatically, the DHCP process is used.
 
+#### DHCPRelease (only happens if the machine previously had an IP in the network)
+
+Releases all of the configs from the previous DHCP leased addresses.
+
 #### DHCPDiscover&#x20;
 
 Looks for a DHCP server by sending a broadcast.&#x20;
@@ -91,7 +95,7 @@ The DHCP server responds to this broadcast and offers an address&#x20;
 
 #### DHCPRequest&#x20;
 
-The host requests to lease the address. Once the lease is up, the host will have to do this process over again for a new address.&#x20;
+The host requests to lease the address. Once the lease is up, the host will have to do this process over again for a new address. T1 = 50% of the lease; T2 = 87.5% of the lease.
 
 #### DHCPACK&#x20;
 

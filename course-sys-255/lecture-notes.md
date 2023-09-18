@@ -38,3 +38,15 @@ Pointer Record used to resolve IPv4 address to a name (inverse query)&#x20;
 
 ip cable rename local admin,&#x20;
 
+
+
+
+
+## dhcp
+
+* 4 packets
+* T1 = 50% of lease; T2 = 87.5% of lease&#x20;
+*
+
+
+
