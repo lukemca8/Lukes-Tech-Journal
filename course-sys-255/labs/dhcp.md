@@ -35,13 +35,15 @@
 
 ## Step 1
 
-I established an SSH session as Linux user Luke from an ad01-luke powershell. I installed the DHCP services using the Yum update manager as an elevated user.&#x20;
+I established an SSH session as Linux user Luke from an ad01-luke powershell.&#x20;
+
+I installed the DHCP services using the Yum update manager as an elevated user.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Successful install of DHCP service </p></figcaption></figure>
 
-Next, I configured the DHCP service by using the vi text editor.&#x20;
+Next, I configured the DHCP service by using the vi text editor.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>cat of dhcp config file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>DHCP config file in vi </p></figcaption></figure>
 
 I start the DHCP service, and I check to make sure it's running properly.
 

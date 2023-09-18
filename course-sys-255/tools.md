@@ -90,4 +90,12 @@ placeholder
 
 ## Windows Server 2019
 
-placeholder
+placeholder&#x20;
+
+## Vi&#x20;
+
+text editor (explain simple commands/keystrokes and their meanings).&#x20;
+
+## Nano&#x20;
+
+text editor (explain simple commands/keystrokes and their meanings).&#x20;
