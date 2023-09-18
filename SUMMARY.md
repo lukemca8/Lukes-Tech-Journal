@@ -11,6 +11,7 @@
   * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
   * [Labs](course-sys-255/labs/README.md)
+    * [DHCP](course-sys-255/labs/dhcp.md)
     * [Linux](course-sys-255/labs/linux.md)
     * [Windows Server 2019, ADDS, and DNS](course-sys-255/labs/windows-server-2019-adds-and-dns.md)
     * [Virtual Firewall and Windows 10 Configuration](course-sys-255/labs/virtual-firewall-and-windows-10-configuration.md)
