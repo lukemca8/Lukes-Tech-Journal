@@ -59,5 +59,34 @@ Next, I add some rules to my firewall regarding the new DHCP service.&#x20;
 
 For the image above, the top half shows the firewall config before, and the bottom part is after the commands. You can see that "DHCP" was added next to the services field. It now sits alongside "dhcpv6-client" and "ssh", which already came with CentOS.
 
-I then log out of the elevated user, and I end the ssh session.&#x20;
+I then log out of the elevated user, and I end the ssh session. &#x20;
 
+## Step 2
+
+I log into wks01-luke as domain admin "luke.mckay-adm" and change the IPv4 properties to obtain an IP address automatically. This will force the workstation to engage with the DHCP service. So now the workstation doesn't have a static IP address.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>re-configuring IPv4 properties on wks01-luke</p></figcaption></figure>
+
+After setting my IPv4 to dynamic addressing, I see if my DHCP service is running properly on the network by running an ipconfig /all in PowerShell.&#x20;
+
+### Deliverable 1
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
+
+The above image shows that my new DHCP Server has been acknowledged by wks01-luke.&#x20;
+
+## Step 3
+
+I log back into dhcp01-luke by establishing an SSH session as Linux user Luke from an ad01-luke powershell. I check the DHCP log for wks01-Luke's request for DHCP information.&#x20;
+
+### Deliverable 2
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>dhcpd logs </p></figcaption></figure>
+
+In the image above, we can see that the DHCP server offers wks01-Luke the IP address 10.0.5.100.
+
+On the next line, wks01-Luke requests the IP address offered to it, basically saying, "Yeah, I'll take the IP address offered to me!"&#x20;
+
+The final line in the log is the DHCP server acknowledging that wks01-Luke accepted the IP address and the IP 10.0.5.100 is leased.
+
+The DHCP server knows not to offer the leased IP address until the lease is over.
