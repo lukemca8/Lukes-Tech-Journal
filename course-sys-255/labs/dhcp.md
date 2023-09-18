@@ -23,7 +23,7 @@
 
 ## Discussion:
 
-[DHCP](../technical-terms.md#dhcp) automatically assigns IP addresses, so you don't have to manually assign IP addresses. Machines on a network will be leased addresses after going through a [short process](../technical-terms.md#dhcp-process) with the server. You can understand how crucial DHCP is if you imagine a large network with 100s of machines needing IP addresses. Going through every machine manually would be a big waste of time. DHCP servers are essential in a large network environment.
+[DHCP](../technical-terms.md#dhcp) automatically assigns IP addresses, so you don't have to manually assign IP addresses. Machines on a network will be leased addresses after going through a [short process](../technical-terms.md#dhcp-process) with the server. You can understand how crucial DHCP is if you imagine a large network with 100s of machines needing IP addresses. Going through every machine manually would be a big waste of time. DHCP servers are essential in any network environment.
 
 ## [Tools](../tools.md)&#x20;
 
