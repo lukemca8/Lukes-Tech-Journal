@@ -2,13 +2,13 @@
 
 ## Course Progression
 
-#### Lab 01
+#### [Lab 01](virtual-firewall-and-windows-10-configuration.md)
 
 * Gained familiarity with the course's lab environment.&#x20;
 * Configured my own firewall that separates my local area network from the rest of the class (SYS255-WAN).&#x20;
 * Configured a Windows 10 machine to communicate with the internet.&#x20;
 
-#### Lab 02&#x20;
+#### [Lab 02](windows-server-2019-adds-and-dns.md)&#x20;
 
 * Established my own internal DNS on a Windows Server 2019 in the lab environment&#x20;
 * Gained familiarity with Windows Server 2019, and ADDS&#x20;
