@@ -32,3 +32,30 @@
 ## Objectives&#x20;
 
 * Install and configure DHCP service on dhcp01-luke.
+
+## Step 1
+
+I established an SSH session as Linux user Luke from an ad01-luke powershell. I installed the DHCP services using the Yum update manager as an elevated user.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Successful install of DHCP service </p></figcaption></figure>
+
+Next, I configured the DHCP service by using the vi text editor.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>cat of dhcp config file</p></figcaption></figure>
+
+I start the DHCP service, and I check to make sure it's running properly.
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>dhcp service running </p></figcaption></figure>
+
+I enable the service to run on bootup&#x20;
+
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>systemctl enable dhcpd </p></figcaption></figure>
+
+Next, I add some rules to my firewall regarding the new DHCP service.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>adding firewall rules</p></figcaption></figure>
+
+For the image above, the top half shows the firewall config before, and the bottom part is after the commands. You can see that "DHCP" was added next to the services field. It now sits alongside "dhcpv6-client" and "ssh", which already came with CentOS.
+
+I then log out of the elevated user, and I end the ssh session.&#x20;
+
