@@ -34,4 +34,4 @@ The image above is the first packet. It is the ARP request. My machine is broadc
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>wireshark capture v2 </p></figcaption></figure>
 
-The image above is the second packet. It is the ARP reply. The default gateway (192.168.3.250) is responding to my broadcast, acknowledging that the requested MAC address of IP 8.8.8.8 is outside of the local network. Since ARP only works throughout local networks, google's DNS server never receives the broadcast. The closest network device to that is the default gateway (the path to distant networks).
+The image above is the second packet. It is the ARP reply. The default gateway (192.168.3.250) is responding to my broadcast with its MAC address (d0:81:c5:23:bd:80), acknowledging that the requested MAC address of IP 8.8.8.8 is outside of the local network. The exact message is "192.168.3.250 is at d0:81:c5:23:bd:80". Since ARP only works throughout local networks, google's DNS server never receives the broadcast. The closest network device to that is the default gateway (the path to distant networks).
