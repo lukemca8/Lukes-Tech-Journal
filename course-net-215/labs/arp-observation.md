@@ -30,8 +30,10 @@ I flush the ARP cache again with the same command as before. I'm setting up for 
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>wireshark capture 2</p></figcaption></figure>
 
-The image above is the first packet. It is the ARP request. My machine is broadcasting a request for the MAC address of IP 192.168.3.250 to all other machines in the network. The exact message is "Who has 192.168.3.250? Tell 192.168.3.29".
+The image above is the first packet. It is the ARP request. After pinging 8.8.8.8, my machine is broadcasting a request for the MAC address of IP 192.168.3.250 to all other machines in the network. The exact message is "Who has 192.168.3.250? Tell 192.168.3.29".
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>wireshark capture v2 </p></figcaption></figure>
 
-The image above is the second packet. It is the ARP reply. The default gateway (192.168.3.250) is responding to my broadcast with its MAC address (d0:81:c5:23:bd:80), acknowledging that the requested MAC address of IP 8.8.8.8 is outside of the local network. The exact message is "192.168.3.250 is at d0:81:c5:23:bd:80". Since ARP only works throughout local networks, google's DNS server never receives the broadcast. The closest network device to that is the default gateway (the path to distant networks).
+The image above is the second packet. It is the ARP reply. The default gateway (192.168.3.250) is responding to my broadcast with its MAC address (d0:81:c5:23:bd:80). The exact message is "192.168.3.250 is at d0:81:c5:23:bd:80".&#x20;
+
+Since ARP only works throughout local networks, Google's DNS server never receives the broadcast, only the pings sent earlier. The closest network device to Google's DNS server is the default gateway, so the default gateway replies.
