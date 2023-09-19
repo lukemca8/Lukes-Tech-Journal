@@ -1,8 +1,14 @@
 # ARP Observation
 
-## notes&#x20;
+## Discussion&#x20;
 
-Default gateway: 192.168.3.250&#x20;
+ARP (Address Resolution Protocol) sends a broadcast with an IP that asks every device on a LAN for a Mac address that corresponds to the broadcasted IP address.&#x20;
+
+## Objectives&#x20;
+
+* Observe ARP operations
+* Understand how ARP is used
+* Gain familiarity with ARP requests and replies
 
 ## Step 1
 
