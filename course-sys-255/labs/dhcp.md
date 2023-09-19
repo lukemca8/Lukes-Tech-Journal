@@ -115,5 +115,12 @@ The last 4 packets are a result of the command `ipconfig /renew` shown in the pr
 
 ## Step 5
 
-I want to figure out how to set the lease time on a leased IP address. At this point, the DHCP service's leasing time is the default, and I want to change it to 1 hour, with a max of 4 hours.
+I want to figure out how to set the lease time on a leased IP address. At this point, the DHCP service's leasing time is the default, and I want to change it to 1 hour, with a max of 4 hours.&#x20;
 
+### Deliverable 4
+
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>the new dhcpd config</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>releasing and renweing the lease to confirm the new lease time.</p></figcaption></figure>
+
+## Reflection
