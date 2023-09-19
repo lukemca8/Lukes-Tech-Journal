@@ -97,3 +97,19 @@ The DHCP server knows not to offer the leased IP address until the lease is over
 
 ## Step 4
 
+Now logged into wks01-Luke, I release the leased DHCP address that was given to me by using the command `ipconfig /release`. Next, I ask for a new IP address from the DHCP server by using the command `ipconfig /renew`. This engages wks01-Luke and dhcp01-luke in the DHCP leasing process.
+
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>renewing IP address</p></figcaption></figure>
+
+While this is happening, I have a Wireshark capture running so I can analyze the DHCP leasing process.&#x20;
+
+### Deliverable 3&#x20;
+
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>DHCP release and leasing process observed in Wireshark.</p></figcaption></figure>
+
+The image above shows packets being sent back and forth between wks01-Luke and dhcp01-luke. There are 5 packets in total.&#x20;
+
+The first packet came from the `ipconfig /release` command shown in the previous image. Wks01-Luke is telling the DHCP server that its IP address isn't needed anymore, so the DHCP server releases the IP config for wks01-Luke from its database. This allows the DHCP server to assign the 10.0.5.100 IP to a device once again.
+
+The last 4 packets are a result of the command `ipconfig /renew` shown in the previous image. These packets are the DHCP leasing process.
+
