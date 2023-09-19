@@ -73,7 +73,7 @@ Just to make sure all of my settings are correct, I did a quick test with Powers
 
 (note: `whoami`should show "ad01-Luke\administrator", but I took this screenshot after completing the lab while logged in as the [Domain Administrator](../technical-terms.md#common-dns-terms), not as the Local Administrator.)
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Powershell test</p></figcaption></figure>
 
 ## Step 2
 
@@ -105,7 +105,7 @@ _After logging in, I noticed the ad01-luke server's network configuration has ch
 
 At this point in the lab, I can't ping fw01-luke by its hostname from ad01-luke, only Ipv4. To fix that, I'm going to make a DNS record on the server. This record will let anyone who uses ad01-luke as a DNS server ping the domain name fw01-luke.luke.local.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Creating the A record for fw01-luke. Checking the "Create associated pointer (PTR) record" will automatically create a PTR record. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Creating the A record for fw01-luke. Checking the "Create associated pointer (PTR) record" will automatically create a PTR record. </p></figcaption></figure>
 
 Currently, the PTR record is not in effect because there isn't a reverse lookup zone. So, I added a reverse primary lookup for the IP addresses in my LAN. To do this, I right-clicked on the "reverse lookup zone" folder under the DNS manager and then clicked on "New Zone".  &#x20;
 

@@ -68,7 +68,7 @@ I then log out of the elevated user, and I end the ssh session. &#x20;
 
 I log into wks01-luke as domain admin "luke.mckay-adm" and change the IPv4 properties to obtain an IP address automatically. This will force the workstation to engage with the DHCP service. So now the workstation doesn't have a static IP address.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>re-configuring IPv4 properties on wks01-luke</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>re-configuring IPv4 properties on wks01-luke</p></figcaption></figure>
 
 After setting my IPv4 to dynamic addressing, I see if my DHCP service is running properly on the network by running an ipconfig /all in PowerShell.&#x20;
 
