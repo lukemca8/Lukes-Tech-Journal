@@ -67,7 +67,7 @@ On vSphere, I configured ad01's network adapter to my internal LAN. I logged int
 
 Also, I changed the hostname to ad01-Luke and rebooted the server. After reboot, with all of the new settings, my local [server manager](../tools.md#server-manager) dashboard looks like this:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>local server manager dashboard</p></figcaption></figure>
 
 Just to make sure all of my settings are correct, I did a quick test with Powershell&#x20;
 
@@ -97,7 +97,7 @@ _The server manager displays an error: "A delegation for this DNS server cannot 
 
 After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory) instead of the local administrator (credentials in Windows OS)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
 
 _After logging in, I noticed the ad01-luke server's network configuration has changed. The DNS server goes to 127.0.0.1 (local loopback adapter for ad01-luke). This means that DNS queries handled outside the local network are forwarded to fw01-luke, and then forwarded to its DNS Server._
 
@@ -115,17 +115,17 @@ This brings up the New Zone Wizard, which prompts for the Network ID, and the re
 
 Now the PTR record created previously will automatically go under the new reverse lookup zone. Also, from now on, anytime an A record is created for a device, a PTR record will be put under the new reverse lookup zone too.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
 
 ## Step 5
 
 Next, I created a named domain administrator account.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
 
 After creating the named domain administrator account, I then created a named domain non-privileged user account. You do the same steps as in the pictures above but you never add them to a domain admin group.
 
@@ -141,14 +141,14 @@ Next, I logged onto wk01-luke and set the DNS to ad01-luke's address.&#x20;
 
 _Note that whenever you add a new system to a domain, you have to set the preferred DNS server to the domain's DNS server._
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>setting wk01-luke DNS to ad01-luke address.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>setting wk01-luke DNS to ad01-luke address.</p></figcaption></figure>
 
 _I can now use_ [_`nslookup`_](../tools.md#nslookup) _to perform a reverse lookup to fw01-luke's PTR record. Pinging is also possible using fully qualified domain hostnames (FQDN) because I set WK01-luke's DNS server to ad01-luke's DNS address. Wk01-luke is not a domain-joined system, and luke.local on wks01-luke does not have a DNS suffix configured, therefore I cannot ping by the unqualified fw01-luke hostname._
 
 \
 Next, I added wks01-luke to the domain as a system.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>adding wk01-luke to domain luke</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>adding wk01-luke to domain luke</p></figcaption></figure>
 
 Before the system is added to the domain, a Windows Security window pops up, asking for the name and password of an account with permission to join the domain. I entered luke.mckay-adm (the domain administrator account previously made from the DNS server manager) and the password I made earlier. I then restarted Wks01-luke.
 
@@ -168,7 +168,7 @@ I made sure the two new users were added.
 
 I then logged into the domain through Wks01-luke as a regular, nonprivileged, domain user.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>logging in</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>logging in</p></figcaption></figure>
 
 ### Deliverable 3
 
