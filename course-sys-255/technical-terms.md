@@ -81,7 +81,7 @@ DHCP automatically assigns IP addresses, so you don't have to manually assign IP
 
 ### DHCPD
 
-DHCPD is a DHCP service. The D at the end of DHCP stands for daemon.&#x20;
+DHCPD is a DHCP service. The D at the end of DHCP stands for daemon. The service runs all of the tasks for the DHCP server.
 
 ### DHCP Configuration
 
