@@ -90,3 +90,5 @@ On the next line, wks01-Luke requests the IP address offered to it, basically sa
 The final line in the log is the DHCP server acknowledging that wks01-Luke accepted the IP address and the IP 10.0.5.100 is leased.
 
 The DHCP server knows not to offer the leased IP address until the lease is over.
+
+`|` is a pipe command. Pipes send the output of the command before it to the next command.
