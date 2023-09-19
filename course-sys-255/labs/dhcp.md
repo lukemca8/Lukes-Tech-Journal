@@ -121,6 +121,10 @@ I want to figure out how to set the lease time on a leased IP address. At this p
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>the new dhcpd config</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>releasing and renweing the lease to confirm the new lease time.</p></figcaption></figure>
+The image above is the output of the command `cat /etc/dhcp/dhcpd.conf`. This command concatenates the file dhcpd.conf. The `default-lease-time` is the average time the DHCPD hands out when giving a client an IP.
+
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>releasing and renweing the lease to confirm the new lease time. </p></figcaption></figure>
+
+The image above is a packet from the DHCP lease process after the new default-lease-time of 3600s was written to the dhcpd.conf file. This confirms the configuration file was successfully updated with the new lease time.
 
 ## Reflection
