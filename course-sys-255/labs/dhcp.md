@@ -91,4 +91,9 @@ The final line in the log is the DHCP server acknowledging that wks01-Luke accep
 
 The DHCP server knows not to offer the leased IP address until the lease is over.
 
-`|` is a pipe command. Pipes send the output of the command before it to the next command.
+`|` is a pipe command. Pipes send the output of the command before it to the next command.&#x20;
+
+`grep` Searches for a specified string of characters inside of files.&#x20;
+
+## Step 4
+
