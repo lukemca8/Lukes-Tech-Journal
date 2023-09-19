@@ -102,7 +102,17 @@ Many switches include features to protect against ARP spoofing.&#x20;
 
 A Static mapping associates an IP address to a MAC address on a specific port.&#x20;
 
-The switch will not allow the MAC to be used on other ports. &#x20;
+The switch will not allow the MAC to be used on other ports.  &#x20;
+
+
+
+
+
+
+
+IP Addr snd+rcv&#x20;
+
+IP does addressing and routing. IP does fragmentation. Fragmentation breaks packets up into smaller pieces so they can fit through a link with a smaller MTU than the original packet size.
 
 &#x20;
 
