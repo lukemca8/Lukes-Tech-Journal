@@ -50,5 +50,15 @@ A Static mapping associates an IP address to a MAC address on a specific port.&#
 
 The switch will not allow the MAC to be used on other ports.&#x20;
 
-## ICMP
+## ICMP&#x20;
+
+IP supporting protocol. Echo request and Echo reply between two network devices. Uses the ping application to test connectivity. It is a major tool for troubleshooting networks. Errors will occur if there is something wrong in the network. For example, pinging an unreachable destination.&#x20;
+
+## Ripv2 &#x20;
+
+Passes routing tables to routers throughout the network.
+
+## Open Shortest Path First
+
+Updates routers throughout the network if a link state changes. Will send an update every 11 seconds.&#x20;
 
