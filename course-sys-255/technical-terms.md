@@ -124,6 +124,10 @@ DHCP server sends the IP addresses to the host (IPv4, default gateway, DNS serve
 * Client: Port 68
 * Server: Port 67
 
+### Sources&#x20;
+
+* [https://linux.die.net/man/5/dhcpd.conf](https://linux.die.net/man/5/dhcpd.conf)
+
 ## Upstream Gateway&#x20;
 
 An upstream gateway is the last network device until the next network segment in the architecture.
