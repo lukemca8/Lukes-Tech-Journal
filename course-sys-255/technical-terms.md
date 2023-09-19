@@ -77,7 +77,23 @@ DNS caching happens outside of the OS and browser as well. A DNS lookup actually
 
 ## DHCP
 
-### DHCP process
+DHCP automatically assigns IP addresses, so you don't have to manually assign IP addresses. Machines on a network will be leased addresses after going through a short process with the server. You can understand how crucial DHCP is if you imagine a large network with 100s of machines needing IP addresses. Going through every machine manually would be a big waste of time. DHCP servers are essential in modern network environments.
+
+### DHCPD
+
+DHCPD is a DHCP service. The D at the end of DHCP stands for daemon.&#x20;
+
+### DHCP Configuration
+
+### DHCP Lease
+
+When a DHCP assigns an IP address, the server actually gives the machine a set time limit for how long the machine can maintain the address. After the time limit is up, the machine will go through the DHCP process to get another IP address.
+
+When a machine loses its IP address, it will try to get the original address back, called the preferred IP address. The client will ask the DHCP server for its preferred IP address when it renews.
+
+A machine can terminate, or release the leased IP address at any time. In powershell, you can use the command `ipconfig /release`. To engage with the DHCP server again, use the command `ipconfig /renew`. &#x20;
+
+### DHCP Process
 
 In order for a computer to have its IP assigned automatically, the DHCP process is used.
 
@@ -129,3 +145,7 @@ The tree is a program that provides a depth-indented listing of files from a rec
 ## Network ID
 
 Used to designate a specific network or host, it is usually represented with the beginning part of an IP address.&#x20;
+
+## Daemon
+
+A background process in Linux that runs if the computer/server is on.

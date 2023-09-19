@@ -27,7 +27,10 @@
 
 ## [Tools](../tools.md)&#x20;
 
-## [Technical Terms](../technical-terms.md)&#x20;
+## [Technical Terms](../technical-terms.md) &#x20;
+
+* DHCP&#x20;
+* DHCP lease
 
 ## Objectives&#x20;
 
