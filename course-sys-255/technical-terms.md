@@ -127,6 +127,7 @@ DHCP server sends the IP addresses to the host (IPv4, default gateway, DNS serve
 ### Sources&#x20;
 
 * [https://linux.die.net/man/5/dhcpd.conf](https://linux.die.net/man/5/dhcpd.conf)
+* [https://www.ibm.com/docs/en/aix/7.2?topic=d-dhcpcd-daemon](https://www.ibm.com/docs/en/aix/7.2?topic=d-dhcpcd-daemon)
 
 ## Upstream Gateway&#x20;
 
