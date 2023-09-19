@@ -113,3 +113,7 @@ The first packet came from the `ipconfig /release` command shown in the previous
 
 The last 4 packets are a result of the command `ipconfig /renew` shown in the previous image. These packets are the DHCP leasing process.
 
+## Step 5
+
+I want to figure out how to set the lease time on a leased IP address. At this point, the DHCP service's leasing time is the default, and I want to change it to 1 hour, with a max of 4 hours.
+
