@@ -46,7 +46,7 @@ Next, I go to [https://www.wireshark.org/download/automated/data/manuf](https://
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>spoofing my MAC address</p></figcaption></figure>
 
-Using the command `sudo mcchanger -m 00:00:36:de:fa:ce eth0`, I successfully spoofed my MAC address to 00:00:36:de:fa:ce. It has the vendor as Atari Corporation because I used the Atari OUI (00:00:36).
+Using the command `sudo mcchanger -m 00:00:36:de:fa:ce eth0`, I spoofed my MAC address to 00:00:36:de:fa:ce. It has the vendor as Atari Corporation because I used the Atari OUI (00:00:36).
 
 ## Step 6&#x20;
 
