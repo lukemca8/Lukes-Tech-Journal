@@ -3,6 +3,7 @@
 * [Luke's Tech Journal](README.md)
 * [Course: NET-215](course-net-215/README.md)
   * [Labs](course-net-215/labs/README.md)
+    * [MAC OUI and MAC Spoofing](course-net-215/labs/mac-oui-and-mac-spoofing.md)
     * [ARP Observation](course-net-215/labs/arp-observation.md)
     * [Packet Headers](course-net-215/labs/packet-headers.md)
     * [OSI Observation Capture](course-net-215/labs/osi-observation-capture.md)

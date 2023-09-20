@@ -52,7 +52,7 @@ After logging into dhcp01, I opened the [nmtui](../tools.md#nmtui) application a
 | ---------------- | ------------------- | ---------- | -------------- |
 | 10.0.5.3/24      | 10.0.5.2 (firewall) | 10.0.5.5   | luke.local     |
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Nmtui</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Nmtui</p></figcaption></figure>
 
 I added user "luke" to dhcp01-luke and made it part of the [wheel](../technical-terms.md#wheel) group.&#x20;
 

@@ -18,7 +18,7 @@ layout:
 
 The OSI Reference model is useful for troubleshooting network issues by isolating them so you know which part of your network you should look into. It is also useful for beginners in the IT scene to have a visual representation of data flow.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p><a href="https://www.mbtechtalker.com/what-is-the-osi-model/">Source</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption><p><a href="https://www.mbtechtalker.com/what-is-the-osi-model/">Source</a></p></figcaption></figure>
 
 ### Inside the Layers
 
