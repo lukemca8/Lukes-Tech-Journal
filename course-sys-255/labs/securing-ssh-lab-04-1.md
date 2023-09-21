@@ -59,6 +59,18 @@ I want to make sure the file change was successful, so I attempted to log into d
 
 The image above is on dhcp01-luke. The logs show the failed login attempts to root. It's showing the problem is within the authentication section of the file sshd\_config "_(sshd:auth)_". That's where I made the change to the config file.
 
+## Step 3&#x20;
+
+### Deliverable 2
+
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>looking for uid</p></figcaption></figure>
+
+The image above shows how to find a user's User ID (UID). In this case, the root's uid is 0. Luke's UID is 1000. I pulled this up using the command `grep "^`(username here)`:" /etc/passwd`.
+
+Based on the logs, if the person trying to log in has a UID greater than or equal to luke's UID (1000), then a value of true returns, and the user can log in with the correct password. Since the root has a UID of 0, a value of false returns, and the user can't log in even with the correct password.
+
+This allows any user accounts to log in, as they start at UID 1000. This denies root user logins because the root is always UID 0.
+
 ## Reflection&#x20;
 
 At the top of the sshd\_config file:&#x20;
