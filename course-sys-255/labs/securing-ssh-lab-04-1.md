@@ -35,6 +35,9 @@ In the SSH config file (/etc/ssh/sshd\_config) there's an option that allows or 
 
 ## [Technical Terms](../technical-terms.md)
 
+* UID&#x20;
+* SSH
+
 ## Objectives&#x20;
 
 * Secure SSH on dhcp01-luke

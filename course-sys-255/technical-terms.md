@@ -154,4 +154,8 @@ Used to designate a specific network or host, it is usually represented with the
 
 ## Daemon
 
-A background process in Linux that runs if the computer/server is on.
+A background process in Linux that runs if the computer/server is on.&#x20;
+
+## UID
+
+User Identification. Used in CentOS Linux. Used to identify different users on an OS. The root user is uid 0. The first user account is uid 1000.&#x20;
