@@ -38,6 +38,7 @@ In the SSH config file (/etc/ssh/sshd\_config) there's an option that allows or 
 ## Objectives&#x20;
 
 * Secure SSH on dhcp01-luke
+* Gain an understanding of Linux logic.
 
 ## Step 1
 
