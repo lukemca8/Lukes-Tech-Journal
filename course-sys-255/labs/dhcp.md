@@ -2,18 +2,18 @@
 
 ## Course Progression
 
-#### [Lab 01](virtual-firewall-and-windows-10-configuration-lab-01.md)
+#### [Lab 01](virtual-firewall-and-windows-10-configuration.md)
 
 * Gained familiarity with the course's lab environment.&#x20;
 * Configured my own firewall that separates my local area network from the rest of the class (SYS255-WAN).&#x20;
 * Configured a Windows 10 machine to communicate with the internet.&#x20;
 
-#### [Lab 02](windows-server-2019-adds-and-dns-lab-02.md)&#x20;
+#### [Lab 02](windows-server-2019-adds-and-dns.md)&#x20;
 
 * Established my own internal DNS on a Windows Server 2019 in the lab environment&#x20;
 * Gained familiarity with Windows Server 2019, and ADDS&#x20;
 
-#### [Lab 03](linux-lab-03.md)&#x20;
+#### [Lab 03](linux.md)&#x20;
 
 * Gained familiarity with CentOS Linux.&#x20;
 * Configured dhcp01-luke to be on my network.
@@ -74,7 +74,7 @@ After setting my IPv4 to dynamic addressing, I see if my DHCP service is running
 
 ### Deliverable 1
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
 
 The above image shows that my new DHCP Server has been acknowledged by wks01-luke.&#x20;
 
@@ -84,7 +84,7 @@ I log back into dhcp01-luke by establishing an SSH session as Linux user Luke fr
 
 ### Deliverable 2
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>dhcpd logs </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>dhcpd logs </p></figcaption></figure>
 
 In the image above, we can see that the DHCP server offers wks01-Luke the IP address 10.0.5.100.
 

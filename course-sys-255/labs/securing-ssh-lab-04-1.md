@@ -2,18 +2,18 @@
 
 ## Course Progression&#x20;
 
-#### [Lab 01](virtual-firewall-and-windows-10-configuration-lab-01.md)
+#### [Lab 01](virtual-firewall-and-windows-10-configuration.md)
 
 * Gained familiarity with the course's lab environment.&#x20;
 * Configured my own firewall that separates my local area network from the rest of the class (SYS255-WAN).&#x20;
 * Configured a Windows 10 machine to communicate with the internet.&#x20;
 
-#### [Lab 02](windows-server-2019-adds-and-dns-lab-02.md)&#x20;
+#### [Lab 02](windows-server-2019-adds-and-dns.md)&#x20;
 
 * Established my own internal DNS on a Windows Server 2019 in the lab environment&#x20;
 * Gained familiarity with Windows Server 2019, and ADDS&#x20;
 
-#### [Lab 03](linux-lab-03.md)&#x20;
+#### [Lab 03](linux.md)&#x20;
 
 * Gained familiarity with CentOS Linux.&#x20;
 * Configured dhcp01-luke to be on my network.
@@ -21,7 +21,7 @@
 * Established an SSH session as Linux user "luke" from wks01 in PowerShell.
 * Experimented with the CentOS Linux directory with bash commands on the SSH session.&#x20;
 
-[Lab 04](dhcp-lab-04.md)&#x20;
+[Lab 04](dhcp.md)&#x20;
 
 * Installed and configured DHCP service on dhcp01-luke.
 
@@ -49,3 +49,10 @@ I use the arrow keys to scroll down to the authentication section of the file. N
 
 ## Step 2
 
+I want to make sure the file change was successful, so I attempted to log into dhcp01-luke as root from an SSH session on ad01-luke. I used the correct password, but it still denied me access. &#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>attempted ssh login as root from ad01-luke powershell </p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>failed login attempts shown in the logs</p></figcaption></figure>
+
+The image above is on dhcp01-luke. The logs show the failed login attempts to root. It's showing the problem is within the authentication section of the file sshd\_config "_(sshd:auth)_". That's where I made the change to the config file.
