@@ -1,5 +1,4 @@
 ---
-description: Lab 02
 layout:
   title:
     visible: true
@@ -13,11 +12,11 @@ layout:
     visible: false
 ---
 
-# Windows Server 2019, ADDS, and DNS
+# Windows Server 2019, ADDS, and DNS (Lab 02)
 
 ## Course Progression
 
-#### [Lab 01](virtual-firewall-and-windows-10-configuration.md)
+#### [Lab 01](virtual-firewall-and-windows-10-configuration-lab-01.md)
 
 * Gained familiarity with the course's lab environment.&#x20;
 * Configured my own firewall that separates my local area network from the rest of the class (SYS255-WAN).&#x20;

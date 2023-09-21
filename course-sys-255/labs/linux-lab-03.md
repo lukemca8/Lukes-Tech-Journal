@@ -1,19 +1,19 @@
-# Linux
+# Linux (Lab 03)
 
 ## Course Progression
 
-#### [Lab 01](virtual-firewall-and-windows-10-configuration.md)
+#### [Lab 01](virtual-firewall-and-windows-10-configuration-lab-01.md)
 
 * Gained familiarity with the course's lab environment.&#x20;
 * Configured my own firewall that separates my local area network from the rest of the class (SYS255-WAN).&#x20;
 * Configured a Windows 10 machine to communicate with the internet.&#x20;
 
-#### [Lab 02](windows-server-2019-adds-and-dns.md)&#x20;
+#### [Lab 02](windows-server-2019-adds-and-dns-lab-02.md)&#x20;
 
 * Established my own internal DNS on a Windows Server 2019 in the lab environment&#x20;
 * Gained familiarity with Windows Server 2019, and ADDS&#x20;
 
-## Discussion:&#x20;
+## Discussion&#x20;
 
 It is extremely uncommon to come across a business that is entirely Windows, Mac, or Linux. You'll probably encounter a heterogeneous environment where a variety of operating systems are used to carry out the organization's objectives. I will set up the [CentOS](../tools.md#centos-linux) operating system in this lab. This particular operating system has been pre-built for me and is open source. It will be my responsibility to finish the configuration procedures so that my expanding business can use and manage it. &#x20;
 

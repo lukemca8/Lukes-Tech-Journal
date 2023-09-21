@@ -1,5 +1,4 @@
 ---
-description: Lab 01
 layout:
   title:
     visible: true
@@ -13,7 +12,7 @@ layout:
     visible: false
 ---
 
-# Virtual Firewall and Windows 10 Configuration
+# Virtual Firewall and Windows 10 Configuration (Lab 01)
 
 ## Discussion
 
