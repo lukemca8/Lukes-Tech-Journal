@@ -114,15 +114,15 @@ This brings up the New Zone Wizard, which prompts for the Network ID, and the re
 
 Now the PTR record created previously will automatically go under the new reverse lookup zone. Also, from now on, anytime an A record is created for a device, a PTR record will be put under the new reverse lookup zone too.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
 
 ## Step 5
 
 Next, I created a named domain administrator account.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
 
