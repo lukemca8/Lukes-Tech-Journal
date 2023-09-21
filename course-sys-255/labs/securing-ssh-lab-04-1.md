@@ -69,7 +69,7 @@ The image above is on dhcp01-luke. The logs show the failed login attempts to ro
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>looking for uid</p></figcaption></figure>
 
-The image above shows how to find a user's User ID (UID). In this case, the root's uid is 0. Luke's UID is 1000. I pulled this up using the command `grep "^`(username here)`:" /etc/passwd`.
+The image above shows how to find a user's [User ID (UID)](../technical-terms.md#uid). In this case, the root's uid is 0. Luke's UID is 1000. I pulled this up using the command `grep "^`(username here)`:" /etc/passwd`.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>logs</p></figcaption></figure>
 
