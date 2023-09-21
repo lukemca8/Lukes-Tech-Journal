@@ -32,11 +32,11 @@ In the SSH config file (/etc/ssh/sshd\_config) there's an option that allows or 
 ## [Tools](../tools.md)
 
 * Nano
+* SSH
 
 ## [Technical Terms](../technical-terms.md)
 
-* UID&#x20;
-* SSH
+* UID
 
 ## Objectives&#x20;
 
