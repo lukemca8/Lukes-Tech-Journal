@@ -21,7 +21,7 @@
 * Established an SSH session as Linux user "luke" from wks01 in PowerShell.
 * Experimented with the CentOS Linux directory with bash commands on the SSH session.&#x20;
 
-[Lab 04](dhcp.md)&#x20;
+#### [Lab 04](dhcp.md)&#x20;
 
 * Installed and configured DHCP service on dhcp01-luke.
 
