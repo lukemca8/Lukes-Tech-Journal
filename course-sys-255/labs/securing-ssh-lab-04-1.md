@@ -80,4 +80,6 @@ At the top of the sshd\_config file:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>readme part of config file denoting default values</p></figcaption></figure>
 
-This tripped me up in the lab a bit because I didn't read this part until I eventually figured it out myself. I was wondering why I could still gain access to the root even after changing the "yes" to "no". It turned out that I left the # symbol, which denotes the line as a comment, and not a command. As it says in the image above, the pound symbols next to the lines leave the config as default, but when you remove the pound symbol, you can change the values from their defaults. Since I initially left the pound symbol there, my change did not matter as it was still technically the default value of "yes".&#x20;
+This tripped me up in the lab a bit because I didn't read this part until I eventually figured it out myself. I was wondering why I could still gain access to the root even after changing the "yes" to "no". It turned out that I left the # symbol, which denotes the line as a comment, and not a command.&#x20;
+
+As it says in the image above, the pound symbols next to the lines leave the config as default, but when you remove the pound symbol, you can change the values from their defaults. Since I initially left the pound symbol there, my change did not matter as it was still technically the default value of "yes".&#x20;
