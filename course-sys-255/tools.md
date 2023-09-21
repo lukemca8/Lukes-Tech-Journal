@@ -18,7 +18,7 @@ layout:
 
 Web client that lets you manage a firewall.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
 
 ## [vSphere](https://www.vmware.com/products/vsphere.html)
 
@@ -54,7 +54,7 @@ placeholder &#x20;
 
 Distribution of Linux.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
 
 ## SSH
 
