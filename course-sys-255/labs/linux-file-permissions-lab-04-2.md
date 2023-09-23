@@ -60,4 +60,12 @@ The image above is me changing the alicefile.txt file group from the alice group
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-The image above shows me logging in as bob and being able to write to the alicefile.txt because it now has the group accounting attached to it, and bob is in the accounting group.
+The image above shows me logging in as bob and being able to write to the alicefile.txt because it now has the group accounting attached to it, and bob is in the accounting group.&#x20;
+
+I log out of bob and log into alice. I changed the pwd to accounting. I list the files under accounting to see the alicfile.txt file permissions. I decide I only want alice to be able to read and write to the file, so I do the command `chmod -v 600 alicefile.txt`. 600 permissions = read and write only for the owner of the file.
+
+
+
+sources:&#x20;
+
+[https://opensource.com/article/19/8/linux-permissions-101](https://opensource.com/article/19/8/linux-permissions-101)&#x20;
