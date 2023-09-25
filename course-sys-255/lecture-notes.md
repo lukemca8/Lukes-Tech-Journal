@@ -38,15 +38,25 @@ Pointer Record used to resolve IPv4 address to a name (inverse query)&#x20;
 
 ip cable rename local admin,&#x20;
 
-
-
-
-
 ## dhcp
 
 * 4 packets
-* T1 = 50% of lease; T2 = 87.5% of lease&#x20;
-*
+* T1 = 50% of lease; T2 = 87.5% of lease &#x20;
+
+## ADDS and Group Policy
+
+Schema - Set of rules/attributes. A map, DNS manager, users, and computers use it.&#x20;
+
+Domain controllers replicate data for confirmation.&#x20;
+
+
+
+### 2 default group policies in every AD domain.&#x20;
+
+* Default Domain Policy
+* Default Domain Controllers Policy.
+
+
 
 
 
