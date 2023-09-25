@@ -64,8 +64,22 @@ The image above shows me logging in as bob and being able to write to the alicef
 
 I log out of bob and log into alice. I changed the pwd to accounting. I list the files under accounting to see the alicfile.txt file permissions. I decide I only want alice to be able to read and write to the file, so I do the command `chmod -v 600 alicefile.txt`. 600 permissions = read and write only for the owner of the file.
 
+## Step 10&#x20;
 
+Fred password: Davetiger1&#x20;
 
-sources:&#x20;
+I add a new user called Fred.
 
-[https://opensource.com/article/19/8/linux-permissions-101](https://opensource.com/article/19/8/linux-permissions-101)&#x20;
+I add two new groups called Marketing and Management. I add users bob and Fred to the Marketing group. I add alice to the management group.&#x20;
+
+I create directories /marketing and /management.&#x20;
+
+I added a file called newproducts.txt under the marketing directory with the permissions set so Bob and Fred can view it, but only Fred can write to the file.&#x20;
+
+I added a file called bobreview.txt under the management directory with the permissions set so only alice and other group members can access it.
+
+<figure><img src="https://lh3.googleusercontent.com/SgBd3gbax1mAIDC1xGrorKLm20zQ_nBn10swyMUuQvuZA_eR1HRXej8KjUhs47MUoyhGfQWEMIUN_Ev_nPEMkFFWCv_-HLh_JKJzRPLKDHi8Bmb1xZkJ3XUAyuurQtl4PCLFJTZ0OWWuADcTQR-ZFxQ" alt=""><figcaption></figcaption></figure>
+
+The image above shows all of the permissions for the two new files and directories.
+
+## Reflection
