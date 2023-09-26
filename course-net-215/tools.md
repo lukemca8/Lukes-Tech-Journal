@@ -24,4 +24,8 @@ Analyze live or previously saved network traffic.....PLACEHOLDER&#x20;
 
 Used to build and simulate networks........PLACEHOLDER&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple simulation of a network using a VLAN </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>A simple simulation of a network using a VLAN  </p></figcaption></figure>
+
+## Binary table
+
+<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p>Helps convert decimal to binary. Also helps with calculating CIDR.</p></figcaption></figure>
