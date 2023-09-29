@@ -13,6 +13,7 @@
   * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
   * [Labs](course-sys-255/labs/README.md)
+    * [AD-DS / Group Policy (Lab 05)](course-sys-255/labs/ad-ds-group-policy-lab-05.md)
     * [Linux File Permissions (Lab 04-2)](course-sys-255/labs/linux-file-permissions-lab-04-2.md)
     * [Securing SSH (Lab 04-1)](course-sys-255/labs/securing-ssh-lab-04-1.md)
     * [DHCP (Lab 04)](course-sys-255/labs/dhcp.md)
