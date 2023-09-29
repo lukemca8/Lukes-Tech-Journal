@@ -12,6 +12,7 @@
   * [Network Protocols](course-net-215/network-protocols.md)
   * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
+  * [Week 6 Assement Prep](course-sys-255/week-6-assement-prep.md)
   * [Labs](course-sys-255/labs/README.md)
     * [AD-DS / Group Policy (Lab 05)](course-sys-255/labs/ad-ds-group-policy-lab-05.md)
     * [Linux File Permissions (Lab 04-2)](course-sys-255/labs/linux-file-permissions-lab-04-2.md)
