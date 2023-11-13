@@ -12,6 +12,7 @@
   * [Network Protocols](course-net-215/network-protocols.md)
   * [Lecture notes](course-net-215/lecture-notes.md)
 * [Course: SYS-255](course-sys-255/README.md)
+  * [CMS](course-sys-255/cms.md)
   * [Week 6 Assement Prep](course-sys-255/week-6-assement-prep.md)
   * [Labs](course-sys-255/labs/README.md)
     * [Apache (Lab 07)](course-sys-255/labs/apache-lab-07.md)

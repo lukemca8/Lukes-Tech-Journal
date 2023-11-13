@@ -38,7 +38,7 @@ I flush the ARP cache again with the same command as before. I'm setting up for 
 
 The image above is the first packet. It is the ARP request. After pinging 8.8.8.8, my machine is broadcasting a request for the MAC address of IP 192.168.3.250 to all other machines in the network. The exact message is "Who has 192.168.3.250? Tell 192.168.3.29".
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wireshark capture v2 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wireshark capture v2 </p></figcaption></figure>
 
 The image above is the second packet. It is the ARP reply. The default gateway (192.168.3.250) is responding to my broadcast with its MAC address (d0:81:c5:23:bd:80). The exact message is "192.168.3.250 is at d0:81:c5:23:bd:80".&#x20;
 

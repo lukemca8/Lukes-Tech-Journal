@@ -96,7 +96,7 @@ _The server manager displays an error: "A delegation for this DNS server cannot 
 
 After rebooting the server, I log in as the Domain Administrator (credentials in Active Directory) instead of the local administrator (credentials in Windows OS)
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Log in page prompting for the Domain Administrator account. </p></figcaption></figure>
 
 _After logging in, I noticed the ad01-luke server's network configuration has changed. The DNS server goes to 127.0.0.1 (local loopback adapter for ad01-luke). This means that DNS queries handled outside the local network are forwarded to fw01-luke, and then forwarded to its DNS Server._
 
@@ -114,17 +114,17 @@ This brings up the New Zone Wizard, which prompts for the Network ID, and the re
 
 Now the PTR record created previously will automatically go under the new reverse lookup zone. Also, from now on, anytime an A record is created for a device, a PTR record will be put under the new reverse lookup zone too.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Reverse Lookup zone</p></figcaption></figure>
 
 ## Step 5
 
 Next, I created a named domain administrator account.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>active directrory users and computers</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>creating a user</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>elevating the user to domain admin</p></figcaption></figure>
 
 After creating the named domain administrator account, I then created a named domain non-privileged user account. You do the same steps as in the pictures above but you never add them to a domain admin group.
 
