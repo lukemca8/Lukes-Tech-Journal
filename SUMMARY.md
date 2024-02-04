@@ -58,4 +58,5 @@
 * [Course: SYS-265](course-sys-265/README.md)
   * [Labs](course-sys-265/labs/README.md)
     * [Routing and Windows (Lab 00)](course-sys-265/labs/routing-and-windows-lab-00.md)
+    * [Network Management (Lab01)](course-sys-265/labs/network-management-lab01.md)
   * [Protocols](course-sys-265/protocols.md)
