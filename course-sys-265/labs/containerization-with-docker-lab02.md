@@ -32,13 +32,63 @@ Output:
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption><p><code>docker version</code> output</p></figcaption></figure>
 
-Docker version outputs all of the current Docker engine version info.
-
 Input: `docker info`
 
 Output:&#x20;
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p><code>docker info</code> output</p></figcaption></figure>
 
+Input: `docker ps`&#x20;
+
+Output:&#x20;
+
+<div data-full-width="false">
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><code>docker ps</code> output</p></figcaption></figure>
+
+</div>
+
+_Used to display the containers_
+
+Input: `docker images`
+
+Output:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p><code>docker images</code> output</p></figcaption></figure>
+
+Input: `docker run hello-world`
+
+Output:&#x20;
+
+<figure><img src="https://lh7-us.googleusercontent.com/irOqDN5VzyPQZCj_4DAPJ4FZyFOhmKWwst42reyt3vURmFAUWCJCscVeRgHEq7ET7uhKXKZ6EEipcZOwcvAJyfm-0312xLtThvHTuFGQB3BY9NudMa5VR6xbVlBMWFOF78c5MgOq38kHtwOXkPbbPY4" alt=""><figcaption><p><code>docker run hello-world</code> output</p></figcaption></figure>
+
+_Docker is pulling the container image “hello-world” from the Docker Hub registry because the hello-world image is not found locally. It then runs the hello world image, which contains the files (in this case text)._
+
+Input: `docker-compose --version`
+
+Output:
+
+<figure><img src="https://lh7-us.googleusercontent.com/Wcy44LdkIv5mNuBkT1xwc3JjG2Q2PdK6-8rXs-kmvi6d7R6N_LcFsZTIJnrsYwZKZWVfQaULKDNHBIBWtggHcgSHYE7Eax9-RgQ5KRAomCo1JNMhaW7zmkF-LjDVJgpuqYtW-iYXmmK3fOzVJV2_8Ps" alt=""><figcaption><p>docker-compose --version</p></figcaption></figure>
+
+Input: `docker run -d -P training/webapp python app.py`
+
+Output:&#x20;
+
+<figure><img src="https://lh7-us.googleusercontent.com/7q7GuLgzKfXW27heDm9a2hNmWRH7Ywks1_Oh1_mOAialkUBVdfZqE_yc_lRoEPe5vpiUgdeixpyc_7fsMXxCo2kVI_BD47GtbCZ-ubmH9EKMBLKg7EZxWObUimCVVV2zFtOOGFfnWk3wmPij99oiMw" alt=""><figcaption><p><code>docker run -d -P training/webapp python app.py</code> output</p></figcaption></figure>
+
+_This runs a docker image, simultaneously creating a container._
+
+_-d is the detached option. This tells Docker to run in the background and not to attach to the terminal. This lets you use the terminal while the container runs in the background._&#x20;
+
+_-P publishes all exposed ports from the container to random ports on the host system. This exposes services running inside the container to the host system, external clients, and other containers on the network. This makes it easy to interact with and test applications inside a Docker container._
+
+Input: `docker-compose up`
+
+Output:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p><code>docker-compose up</code> output</p></figcaption></figure>
+
+_Docker compose starts the services defined in the docker-compose.yml file from the pwd (present working directory) and outputs the logs from all the containers._
 
 ## Ubuntu Basic Configuration
 

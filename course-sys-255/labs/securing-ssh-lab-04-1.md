@@ -47,7 +47,7 @@ In the SSH config file (/etc/ssh/sshd\_config) there's an option that allows or 
 
 On dhcp01-luke, I enter the command `sudo nano /etc/ssh/sshd_config`. This brings me to the ssh config file in the nano text editor.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>sshd_config in nano text editor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>sshd_config in nano text editor</p></figcaption></figure>
 
 I use the arrow keys to scroll down to the authentication section of the file. Next to "PermitRootLogin" is the option "yes". I change it to "no", as seen in the image above. Also, there was a # at the start of the line, which denotes the line to a comment. I removed the # symbol so the config file would actually read that line as a command. I press "CTRL + o" keys and then enter to save the file. I press "CTRL + x" to exit the file.
 
@@ -55,11 +55,11 @@ I use the arrow keys to scroll down to the authentication section of the file. N
 
 I want to make sure the file change was successful, so I attempted to log into dhcp01-luke as root from an SSH session on ad01-luke. I used the correct password, but it still denied me access. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>attempted ssh login as root from ad01-luke powershell </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>attempted ssh login as root from ad01-luke powershell </p></figcaption></figure>
 
 ### Deliverable 1
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>failed login attempts shown in the logs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>failed login attempts shown in the logs</p></figcaption></figure>
 
 The image above is on dhcp01-luke. The logs show the failed login attempts to root. It's showing the problem is within the authentication section of the file sshd\_config "_(sshd:auth)_". That's where I made the change to the config file.
 
@@ -71,7 +71,7 @@ The image above is on dhcp01-luke. The logs show the failed login attempts to ro
 
 The image above shows how to find a user's [User ID (UID)](../technical-terms.md#uid). In this case, the root's uid is 0. Luke's UID is 1000. I pulled this up using the command `grep "^`(username here)`:" /etc/passwd`.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>logs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>logs</p></figcaption></figure>
 
 Based on the logs (image above), if the person trying to log in has a UID greater than or equal to luke's UID (1000), then a value of true returns, and the user can log in with the correct password. Since the root has a UID of 0, a value of false returns, and the user can't log in even with the correct password.
 
@@ -81,7 +81,7 @@ This allows any user accounts to log in, as they start at UID 1000. This denies 
 
 At the top of the sshd\_config file:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>readme part of config file denoting default values</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>readme part of config file denoting default values</p></figcaption></figure>
 
 This tripped me up in the lab a bit because I didn't read this part until I eventually figured it out myself. I was wondering why I could still gain access to the root even after changing the "yes" to "no". It turned out that I left the # symbol, which denotes the line as a comment, and not a command.&#x20;
 
