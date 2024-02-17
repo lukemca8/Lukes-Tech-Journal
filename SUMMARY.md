@@ -62,4 +62,5 @@
     * [Containerization with Docker (Lab02)](course-sys-265/labs/containerization-with-docker-lab02.md)
   * [Protocols](course-sys-265/protocols/README.md)
     * [Docker - Project](course-sys-265/protocols/docker-project.md)
-  * [Projects](course-sys-265/projects.md)
+  * [Projects](course-sys-265/projects/README.md)
+    * [Docker](course-sys-265/projects/docker.md)
