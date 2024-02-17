@@ -12,6 +12,8 @@ A docker file is a text file that has the instructions to build a docker image. 
 
 Images are used in containers. Docker images are the building blocks of containers. An image contains application code, runtime environment, dependencies, config files, and metadata (image name, tags, labels), which is built from a docker file.
 
+<figure><img src="https://lh7-us.googleusercontent.com/irOqDN5VzyPQZCj_4DAPJ4FZyFOhmKWwst42reyt3vURmFAUWCJCscVeRgHEq7ET7uhKXKZ6EEipcZOwcvAJyfm-0312xLtThvHTuFGQB3BY9NudMa5VR6xbVlBMWFOF78c5MgOq38kHtwOXkPbbPY4" alt=""><figcaption><p>docker running hello world image</p></figcaption></figure>
+
 ### Containers
 
 Containers are used to package and run applications alongside their dependencies. Containers are isolated environments that have everything needed to run an application. Code, runtime, system libraries, and dependencies are stored within containers. Running a docker container essentially executes an image.&#x20;
@@ -19,6 +21,8 @@ Containers are used to package and run applications alongside their dependencies
 ### Docker Compose
 
 Docker compose is a tool used for defining and managing multi-container Docker applications. Docker compose uses a docker-compose.yml file which contains the services, networks, and volumes required for an application. When you run `docker-compose up`, docker-compose automatically builds images for services with a build config specified in the docker-compose.yml file. It then starts containers based on these images. This lets you define and manage an entire application stack.
+
+<figure><img src="https://lh7-us.googleusercontent.com/_Jmbq9Ha1c18LxDf_IfUOQr18MTCnszn1VL7hw45cu-ORXB-jyRiOf3MbZ-0WJSppGnFSK8gYb8Lw707qbRwvs-GystxBBvYt3tmyx6YcekMUo897bzmkIkZILQBbtekOSC1QQBngp7gNTVWY5Mw408" alt=""><figcaption><p>website created with a docker-compose.yaml file</p></figcaption></figure>
 
 ### Docker Hub
 
