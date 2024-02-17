@@ -20,7 +20,7 @@ I make note of my default gateway
 
 I start a Wireshark capture and ping the default gateway.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ping/Wireshark capture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ping/Wireshark capture</p></figcaption></figure>
 
 I analyze the packets for the default gateway's MAC address. I find it under the first packet as the destination address (d0:81:c5:23:bd:80).
 

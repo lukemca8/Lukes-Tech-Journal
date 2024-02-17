@@ -64,7 +64,7 @@ Wks01-Luke only has a default champuser username and default password, so I set 
 
 I also changed the wks01-luke Ipv4 and preferred DNS from the assigned default addresses.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wks01-Luke Ipv4 setup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>wks01-Luke Ipv4 setup</p></figcaption></figure>
 
 ## Step 3 &#x20;
 

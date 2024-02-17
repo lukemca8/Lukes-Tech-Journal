@@ -74,7 +74,7 @@ After setting my IPv4 to dynamic addressing, I see if my DHCP service is running
 
 ### Deliverable 1
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
 
 The above image shows that my new DHCP Server has been acknowledged by wks01-luke.&#x20;
 
