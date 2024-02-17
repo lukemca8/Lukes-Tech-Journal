@@ -47,7 +47,7 @@ Input: `docker info`
 
 Output:&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p><code>docker info</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p><code>docker info</code> output</p></figcaption></figure>
 
 Input: `docker ps`&#x20;
 
@@ -55,7 +55,7 @@ Output:&#x20;
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><code>docker ps</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><code>docker ps</code> output</p></figcaption></figure>
 
 </div>
 
@@ -65,7 +65,7 @@ Input: `docker images`
 
 Output:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p><code>docker images</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><code>docker images</code> output</p></figcaption></figure>
 
 Input: `docker run hello-world`
 
@@ -97,7 +97,7 @@ Input: `docker-compose up`
 
 Output:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p><code>docker-compose up</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p><code>docker-compose up</code> output</p></figcaption></figure>
 
 _Docker compose starts the services defined in the docker-compose.yml file from the pwd (present working directory) and outputs the logs from all the containers._
 
