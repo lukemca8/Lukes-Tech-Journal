@@ -1,5 +1,12 @@
 # Containerization with Docker (Lab02)
 
+## Lab Results:
+
+* Basic Ubuntu configuration (Hostname, user, network config, disable root ssh)&#x20;
+* Docker installation
+* Docker-compose installation
+* WordPress website creation using a docker-compose.yaml file
+
 ## Docker Basics
 
 Docker is a containerization service used to deploy applications in isolated environments.&#x20;
