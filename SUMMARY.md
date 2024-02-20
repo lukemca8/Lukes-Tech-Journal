@@ -63,3 +63,5 @@
   * [Protocols](course-sys-265/protocols.md)
   * [Projects](course-sys-265/projects.md)
     * [Docker](course-sys-265/projects/docker.md)
+* [Course: SEC-260](course-sec-260/README.md)
+  * [Notes](course-sec-260/notes.md)
