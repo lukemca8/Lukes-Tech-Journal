@@ -65,3 +65,4 @@
     * [Docker](course-sys-265/projects/docker.md)
 * [Course: SEC-260](course-sec-260/README.md)
   * [Notes](course-sec-260/notes.md)
+  * [Apache and Certificate](course-sec-260/apache-and-certificate.md)
