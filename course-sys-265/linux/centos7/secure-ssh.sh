@@ -13,7 +13,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Extract the username from the parameter
-username=$1
+username="$1"
 
 # Check if the public key exists
 public_key_path="/home/luke.mckay/Tech-Journal/linux/public-keys/id_rsa.pub"
@@ -26,7 +26,7 @@ fi
 if sudo id "$username" &>/dev/null; then
     echo "User $username already exists."
 else
-    sudo useradd -m -s /bin/bash $username
+    sudo useradd -m -s /bin/bash "$username"
     if [ $? -eq 0 ]; then
         echo "User $username has been created."
     else
@@ -36,15 +36,16 @@ else
 fi
 
 # Set permissions for the .ssh directory and authorized_keys file
-sudo mkdir -p /home/$username/.ssh
-sudo chmod 700 /home/$username/.ssh
-sudo chmod 600 /home/$username/.ssh/authorized_keys
+sudo mkdir -p "/home/$username/.ssh"
+sudo chmod 700 "/home/$username/.ssh"
+sudo chmod 600 "/home/$username/.ssh/authorized_keys"
 
 # Copy the public key to the authorized_keys file
-sudo cp $public_key_path /home/$username/.ssh/authorized_keys
+sudo cp "$public_key_path" "/home/$username/.ssh/authorized_keys"
 
 # Set correct ownership of the .ssh directory and authorized_keys file
-sudo chown -R $username:$username /home/$username/.ssh
+sudo chown -R "$username:$username" "/home/$username/.ssh"
 
 echo "User $username has been created with passwordless SSH access using the provided public key."
+
 "
