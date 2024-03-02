@@ -5,22 +5,30 @@
 #removes roots ability to ssh in
 #!/bin/bash
 
-# Create user 'test2' with home directory '/home/test2' and bash shell
-useradd -m -d /home/test2 -s /bin/bash test2
+# Check if username parameter is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+fi
 
-# Create .ssh directory for user 'test2'
-mkdir /home/test2/.ssh
+USERNAME=$1
 
-# Copy public key to authorized_keys for user 'test2'
-cp /home/luke.mckay/Tech-Journal/course-sys-265/linux/public-keys/id_rsa.pub /home/test2/.ssh/authorized_keys
+# Create user with provided username, home directory '/home/<username>', and bash shell
+useradd -m -d /home/$USERNAME -s /bin/bash $USERNAME
+
+# Create .ssh directory for the user
+mkdir /home/$USERNAME/.ssh
+
+# Copy public key to authorized_keys for the user
+cp /home/luke.mckay/Tech-Journal/course-sys-265/linux/public-keys/id_rsa.pub /home/$USERNAME/.ssh/authorized_keys
 
 # Set permissions for .ssh directory
-chmod 700 /home/test2/.ssh
+chmod 700 /home/$USERNAME/.ssh
 
 # Set permissions for authorized_keys file
-chmod 600 /home/test2/.ssh/authorized_keys
+chmod 600 /home/$USERNAME/.ssh/authorized_keys
 
-# Change ownership of .ssh directory and its contents to user 'test2'
-chown -R test2:test2 /home/test2/.ssh
+# Change ownership of .ssh directory and its contents to the user
+chown -R $USERNAME:$USERNAME /home/$USERNAME/.ssh
 
-echo "User 'test2' has been created and SSH keys have been configured."
+echo "User '$USERNAME' has been created and SSH keys have been configured."
