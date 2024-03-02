@@ -23,7 +23,17 @@ if [ ! -f "$public_key_path" ]; then
 fi
 
 # Create a passwordless user
-sudo useradd -m -s /bin/bash $username
+if sudo id "$username" &>/dev/null; then
+    echo "User $username already exists."
+else
+    sudo useradd -m -s /bin/bash $username
+    if [ $? -eq 0 ]; then
+        echo "User $username has been created."
+    else
+        echo "Failed to create user $username."
+        exit 1
+    fi
+fi
 
 # Set permissions for the .ssh directory and authorized_keys file
 sudo mkdir -p /home/$username/.ssh
