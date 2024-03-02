@@ -5,35 +5,22 @@
 #removes roots ability to ssh in
 #!/bin/bash
 
-# Check if a username is provided as a parameter
-if [ $# -eq 0 ]; then
-    echo 'Usage: $0 <username>'
-    exit 1
-fi
+# Create user 'test2' with home directory '/home/test2' and bash shell
+useradd -m -d /home/test2 -s /bin/bash test2
 
-# Extract the username from the parameter
-username="$1"
+# Create .ssh directory for user 'test2'
+mkdir /home/test2/.ssh
 
-# Create a passwordless user if it doesn't exist
-if id "$username" &>/dev/null; then
-    echo "User $username already exists."
-else
-    sudo useradd -m -s /bin/bash "$username"
-    echo "User $username has been created."
-fi
+# Copy public key to authorized_keys for user 'test2'
+cp /home/luke.mckay/Tech-Journal/course-sys-265/linux/public-keys/id_rsa.pub /home/test2/.ssh/authorized_keys
 
-# Set the public key for passwordless SSH
-public_key_path="/home/luke.mckay/Tech-Journal/linux/public-keys/id_rsa.pub"
-if [ ! -f "$public_key_path" ]; then
-    echo "Public key not found at $public_key_path"
-    exit 1
-fi
+# Set permissions for .ssh directory
+chmod 700 /home/test2/.ssh
 
-# Set up SSH keys
-sudo mkdir -p "/home/$username/.ssh"
-sudo cp "$public_key_path" "/home/$username/.ssh/authorized_keys"
-sudo chmod 700 "/home/$username/.ssh"
-sudo chmod 600 "/home/$username/.ssh/authorized_keys"
-sudo chown -R "$username:$username" "/home/$username/.ssh"
+# Set permissions for authorized_keys file
+chmod 600 /home/test2/.ssh/authorized_keys
 
-echo "User $username has been set up for passwordless SSH access."
+# Change ownership of .ssh directory and its contents to user 'test2'
+chown -R test2:test2 /home/test2/.ssh
+
+echo "User 'test2' has been created and SSH keys have been configured."
