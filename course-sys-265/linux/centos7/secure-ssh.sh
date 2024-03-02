@@ -36,8 +36,5 @@ sudo cp $public_key_path /home/$username/.ssh/authorized_keys
 # Set correct ownership of the .ssh directory and authorized_keys file
 sudo chown -R $username:$username /home/$username/.ssh
 
-# Enable passwordless sudo for the new user
-echo "$username ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$username
-
 echo "User $username has been created with passwordless SSH access using the provided public key."
 "
