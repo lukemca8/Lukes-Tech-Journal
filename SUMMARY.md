@@ -60,6 +60,7 @@
     * [Routing and Windows (Lab 00)](course-sys-265/labs/routing-and-windows-lab-00.md)
     * [Network Management (Lab01)](course-sys-265/labs/network-management-lab01.md)
     * [Containerization with Docker (Lab02)](course-sys-265/labs/containerization-with-docker-lab02.md)
+    * [Git and Linux SSH Script (Lab03)](course-sys-265/labs/git-and-linux-ssh-script-lab03.md)
   * [Protocols](course-sys-265/protocols.md)
   * [Projects](course-sys-265/projects.md)
     * [Docker](course-sys-265/projects/docker.md)
