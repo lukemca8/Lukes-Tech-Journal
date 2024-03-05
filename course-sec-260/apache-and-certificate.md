@@ -120,14 +120,19 @@ On the Kali VM:
 3. Create the CA certificate:
    * Command: `openssl req -new -x509 -days 365 -key private/cakey.pem -out cacert.pem`.
    * Description: Generates a new certificate request and self-signs it to create the CA certificate (`cacert.pem`). The certificate is valid for 365 days.
+   * Note the entries. Use Joyce310 as the organization name, org unit name, and common name. Make note of the password.
 
 II. Create the certificate request on your web server (\*Rocky)
 
 1. Generate a private key and certificate request for the web server:
+   * under the HTML directory
    * Command: `openssl req -newkey rsa:2048 -keyout websrv.key -out websrv.csr`.
    * Description: Creates a new RSA private key (`websrv.key`) and a certificate signing request (`websrv.csr`) for the web server.
+   * Use the same entries from the CA certificate creation.
 2. Transfer the CSR file to the Certificate Authority:
    * Use SCP to copy the `websrv.csr` file to the Certificate Authority server.
+   * `scp "filename" your_username@remotehost.edu:/some/remote/directory`
+   * you can use the IP instead of the hostname
 
 III. Sign the certificate on the Certificate Authority
 
@@ -137,6 +142,7 @@ On the Certificate Authority Server:
    * Command: `openssl ca -out websrv.crt -infiles websrv.csr`.
    * Description: Signs the certificate request (`websrv.csr`) using the CA's private key and generates the signed certificate (`websrv.crt`).
 2. Transfer the signed certificate file back to the web server using SCP.
+   * transfer it to the html directory.
 
 IV. Submission:
 
@@ -156,16 +162,27 @@ Setting up HTTPS on Your CentOS Web Server
 I. Setting up Certificate and Key on the web server
 
 1. Copy the certificate and private key files to the following locations:
-   * Web Server certificate: `/etc/pki/tls/certs`
+   * Web Server certificate: `/etc/pki/tls/certs\`
+     * `sudo cp /path/to/server.crt /etc/pki/tls/certs/`
    * Web server private key: `/etc/pki/tls/private`
+     * `sudo cp /path/to/server.key /etc/pki/tls/private/`
 2. Install mod\_ssl for Apache:
    * Command: `yum -y install mod_ssl`
 3. Update `/etc/httpd/conf.d/ssl.conf`:
    * Find `SSLCertificateFile` and ensure the path and filename match your certificate file.
    * Find `SSLCertificateKeyFile` and ensure the path and filename match your key file.
    * Save the file.
-4. Update firewall to allow port 443 and reload firewall:
-   * Use appropriate commands for your firewall configuration.
+4.  Update firewall to allow port 443 and reload firewall:
+
+    Use appropriate commands for your firewall configuration.
+
+    * `sudo firewall-cmd --zone=public --add-port=443/tcp --permanent`
+    * sudo firewall-cmd --reload
+      * if that doesnt work:&#x20;
+        * sudo yum install ufw
+        * sudo ufw enable
+        * sudo ufw allow 443&#x20;
+        * sudo ufw reload
 5. Restart httpd:
    * Command: `systemctl restart httpd`
 6. Browse to your server using HTTPS:
