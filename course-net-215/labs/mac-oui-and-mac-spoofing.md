@@ -14,13 +14,13 @@ MAC spoofing.
 
 I make note of my default gateway
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>ipconfig</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ipconfig</p></figcaption></figure>
 
 ## Step 2
 
 I start a Wireshark capture and ping the default gateway.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ping/Wireshark capture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ping/Wireshark capture</p></figcaption></figure>
 
 I analyze the packets for the default gateway's MAC address. I find it under the first packet as the destination address (d0:81:c5:23:bd:80).
 
@@ -28,7 +28,7 @@ I analyze the packets for the default gateway's MAC address. I find it under the
 
 I go to [https://www.wireshark.org/tools/oui-lookup.html](https://www.wireshark.org/tools/oui-lookup.html) and enter the default gateway's MAC address into the OUI search.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>default gateway OUI search</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>default gateway OUI search</p></figcaption></figure>
 
 The result is "D0:81:C5 Juniper Networks". "D0:81:C5" is the OUI. "Juniper Networks" is the vendor of the router (default gateway).&#x20;
 

@@ -4,11 +4,11 @@ I used docker and docker-compose to build a web application with node.js as the 
 
 ## Directory:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>project directory</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>project directory</p></figcaption></figure>
 
 ### Docker-compose.yml:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>docker-sompose.yml file </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>docker-sompose.yml file </p></figcaption></figure>
 
 The Docker-compose.yml file specifies the services required for the final product and their configurations. While the web service image is built locally from the Dockerfile, the MongoDB image is pulled from the Docker Hub registry.
 
@@ -18,7 +18,7 @@ Once this file is run, the build process begins.
 
 ### Dockerfile:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Dockerfile file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Dockerfile file</p></figcaption></figure>
 
 This file builds the web application image.
 
@@ -36,7 +36,7 @@ After creating the project directory and files: `sudo docker-compose up --build`
 
 This command starts the building process for the docker images specified in the docker-compose.yml file and the containers to go along with them. Docker-node-mongo\_web is the web application and mongo is the database for the web application.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>docker proccess</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>docker proccess</p></figcaption></figure>
 
 Dockerfile is used to build the docker-node-mongo\_web image. Once the image is built, the container is built from it, and it is configured to run the node.js web server as defined in the index.js file.&#x20;
 

@@ -55,7 +55,7 @@ Output:&#x20;
 
 <div data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p><code>docker ps</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p><code>docker ps</code> output</p></figcaption></figure>
 
 </div>
 
@@ -65,7 +65,7 @@ Input: `docker images`
 
 Output:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><code>docker images</code> output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p><code>docker images</code> output</p></figcaption></figure>
 
 Input: `docker run hello-world`
 

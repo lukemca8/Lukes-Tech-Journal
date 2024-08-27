@@ -2,7 +2,8 @@
 
 * [Luke's Tech Journal](README.md)
 * [Course: NET-330](course-net-330/README.md)
-  * [Labs](course-net-330/labs.md)
+  * [Labs](course-net-330/labs/README.md)
+    * [Lab 1-3: Packet Tracer Review](course-net-330/labs/lab-1-3-packet-tracer-review.md)
   * [Tools](course-net-330/tools.md)
   * [Lecture Notes](course-net-330/lecture-notes.md)
   * [Projects](course-net-330/projects.md)

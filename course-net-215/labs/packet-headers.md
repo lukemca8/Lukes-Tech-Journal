@@ -4,7 +4,7 @@ description: Lab 2-2
 
 # Packet Headers
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Observing a HTTP packet in Wireshark</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Observing a HTTP packet in Wireshark</p></figcaption></figure>
 
 14 bytes are included in the Ethernet II header.&#x20;
 
