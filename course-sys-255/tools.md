@@ -18,7 +18,7 @@ layout:
 
 Web client that lets you manage a firewall.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>pfSense web interface</p></figcaption></figure>
 
 ## [vSphere](https://www.vmware.com/products/vsphere.html)
 
@@ -40,7 +40,7 @@ Used for automating the management of systems. Utilizes a command-line shell wit
 
 Cmd or command prompt is an application used to execute commands. These commands can be used to create scripts that automate tasks, run complex administrative tasks, and troubleshoot various Windows errors/problems.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>empty cmd window </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>empty cmd window </p></figcaption></figure>
 
 ## Active Directory&#x20;
 
@@ -54,7 +54,7 @@ placeholder &#x20;
 
 Distribution of Linux.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>long listing of files and directories on the kernel</p></figcaption></figure>
 
 ## SSH
 
@@ -64,7 +64,7 @@ Manage computers remotely from a shell.&#x20;
 
 Basic network configuration application within Linux kernel. It's opened by the command nmtui.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>nmtui gui</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>nmtui gui</p></figcaption></figure>
 
 ## Directory&#x20;
 
