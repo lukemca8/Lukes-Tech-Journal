@@ -74,7 +74,7 @@ After setting my IPv4 to dynamic addressing, I see if my DHCP service is running
 
 ### Deliverable 1
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DHCP connectivity test</p></figcaption></figure>
 
 The above image shows that my new DHCP Server has been acknowledged by wks01-luke.&#x20;
 
@@ -84,7 +84,7 @@ I log back into dhcp01-luke by establishing an SSH session as Linux user Luke fr
 
 ### Deliverable 2
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>dhcpd logs </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>dhcpd logs </p></figcaption></figure>
 
 In the image above, we can see that the DHCP server offers wks01-Luke the IP address 10.0.5.100.
 
