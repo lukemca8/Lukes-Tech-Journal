@@ -1,6 +1,12 @@
 # Table of contents
 
 * [Luke's Tech Journal](README.md)
+* [Course: NET-330](course-net-330/README.md)
+  * [Labs](course-net-330/labs.md)
+  * [Tools](course-net-330/tools.md)
+  * [Lecture Notes](course-net-330/lecture-notes.md)
+  * [Projects](course-net-330/projects.md)
+  * [Terms](course-net-330/terms.md)
 * [Course: NET-215](course-net-215/README.md)
   * [Labs](course-net-215/labs/README.md)
     * [MAC OUI and MAC Spoofing](course-net-215/labs/mac-oui-and-mac-spoofing.md)
