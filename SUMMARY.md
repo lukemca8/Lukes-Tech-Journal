@@ -3,6 +3,7 @@
 * [Luke's Tech Journal](README.md)
 * [Course: NET-330](course-net-330/README.md)
   * [Labs](course-net-330/labs/README.md)
+    * [Lab 2-1: Subnet Design](course-net-330/labs/lab-2-1-subnet-design.md)
     * [Lab 1-3: Packet Tracer Review](course-net-330/labs/lab-1-3-packet-tracer-review.md)
     * [Lab 1-1: Simple Network Hardware](course-net-330/labs/lab-1-1-simple-network-hardware.md)
   * [Tools](course-net-330/tools.md)
