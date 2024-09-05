@@ -18,7 +18,23 @@ I will apply the subnet scheme to the packet tracer starter file. &#x20;
 
 
 
+### **Configure Edge Switches**
 
+* **Add vlans to the vlan database**
+  * **100 and 110 to all**
+  * **130 (Lab1) in East-02 switch only**
+  * **140 (Lab2) in West-02 switch only**
+* **All edge switches assigned VLAN 100 (FacStaff) on ports 4-12**&#x20;
+* **All edge switches assigned VLAN 110 (Student) on ports 13-20**
+* **East-Edge-02 assigned VLAN 130 (Lab1) on ports 21-24**
+* **West-Edge-02 assigned VLAN 140 (Lab2) on ports 21-24**
+
+#### **Useful Commands:**
+
+<pre><code><strong>(config)interface range FastEthernet 0/x-y (lets you configure multiple ports at one time)
+</strong><strong>(config-if-range)switchport access vlan x (defines the vlan for all ports in the range)
+</strong><strong>(any)do copy run start (the active config (running-config) is saved to the startup config (startup-config), and will run on a reboot.)
+</strong></code></pre>
 
 
 
