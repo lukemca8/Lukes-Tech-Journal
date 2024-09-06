@@ -185,9 +185,9 @@ I pinged Lab1-01 (10.8.12.2) from FacStaff-01. Lab1-01 replies, indicating a suc
 
 <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
-**I pinged Lab2-01 (10.8.12.66) from FacStaff-01. Lab2-01 replies, indicating a successful connection between two devices in a different VLAN, on a different switch, on the West side of the theoretical School Network.**&#x20;
+I pinged Lab2-01 (10.8.12.66) from FacStaff-01. Lab2-01 replies, indicating a successful connection between two devices in a different VLAN, on a different switch, on the West side.
 
-**Network for a School:**&#x20;
+**Small-scale School Network:**
 
 <figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption><p>Simulated School Network </p></figcaption></figure>
 
