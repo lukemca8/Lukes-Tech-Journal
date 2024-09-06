@@ -36,9 +36,45 @@ I will apply the subnet scheme to the packet tracer starter file. &#x20;
 </strong><strong>(any)do copy run start (the active config (running-config) is saved to the startup config (startup-config), and will run on a reboot.)
 </strong></code></pre>
 
+### **Configure End User Devices**
 
+* **Assign FacStaff PC's IP's from VLAN 100 (make sure netmask and gateway are correct)**
+* **Assign Student PC's IP's from VLAN 110**
+* **Assign Lab PC's appropriate IP's**
 
+I did the above steps manually. I clicked on each pc's fastEthernet0 interface config and set the IP according to the VLAN IP range. I also set the netmask under the same tab. I then assigned the default gateway within the Global settings config.  I based the default gateway on the first possible IP for each VLAN.
 
+#### FacStaff PC IP's:
+
+_VLAN 100_
+
+Default Gateway and Netmask: 10.8.11.1 , 255.255.255.0
+
+01= 10.8.11.2 , 02= 10.8.11.3 , 03= 10.8.11.4 , 04= 10.8.11.5 , 05= 10.8.11.6 , 06= 10.8.11.7
+
+#### Student PC IP's:
+
+_VLAN 110_
+
+Default Gateway and Netmask: 10.8.8.1 , 255.255.254.0
+
+01= 10.8.8.2 , 02= 10.8.8.3 , 03= 10.8.8.4 , 04= 10.8.8.5 , 05= 10.8.8.6 , 06= 10.8.8.7
+
+#### East Lab PC IP's:
+
+_VLAN 130_
+
+Default Gateway and Netmask: 10.8.12.1 , 255.255.255.192
+
+01= 10.8.12.2 , 02= 10.8.12.3
+
+#### West Lab PC IP's:
+
+_VLAN 140_
+
+Default Gateway and Netmask: 10.8.12.65 , 255.255.255.192
+
+01= 10.8.12.66
 
 
 
