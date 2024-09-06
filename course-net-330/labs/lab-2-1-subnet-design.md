@@ -108,11 +108,88 @@ I ping FacStaff-05 (10.8.11.6) from FacStaff-01. The request times out, indicati
 * **Add vlans 100, 110, 130, and 140 to the vlan database on Core Switches**
 * **Configure FastEthernet 0/1 and 0/2 as trunk ports for the appropriate vlans**
 
+I encountered a command rejected response while configuring trunk ports for East-Core-Switch-01 from the CIOS CLI when entering the command `switchport mode trunk`:
 
+"Command rejected: An interface whose trunk encapsulation is 'Auto' can not be configured to 'trunk' mode."
+
+To solve this issue, I enter the command `switchport trunk encapsulation dot1q` before the `switchport mode trunk` command. After selecting the interface
+
+#### Why This Fix Works:
+
+1. **Trunk Encapsulation**: There are two main encapsulation protocols for trunking:
+   * **ISL (Inter-Switch Link)**: Cisco proprietary protocol (less commonly used today).
+   * **802.1Q**: The IEEE standard for VLAN tagging, used more widely because it's vendor-neutral.
+2. **"Auto" Encapsulation**: When set to "auto," the switch won't allow you to force the interface into trunk mode until it negotiates the encapsulation. By explicitly setting the encapsulation to **802.1Q**, you're overriding the "auto" setting and telling the switch exactly how to handle VLAN tagging on that trunk port.
+3. **Switching to Trunk Mode**: Once encapsulation is set, you can safely configure the interface as a trunk. The encapsulation must be specified first, so the switch knows how to process and tag the VLAN traffic.
+
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 #### **Configure trunk ports for Edge switches**
 
 * **Configure FastEthernet 0/1 as trunk port for the appropriate vlans**
+
+I did the commands as seen in the above image, but I didn't need to enter the encapsulation command.
+
+Next, I connected the core switches to the edge switches with a cross-over cable:&#x20;
+
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+
+**Verification:**
+
+&#x20;You should now be able to ping between two systems on the same VLAN on different switches:
+
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
+**I** ping FacStaff-04 from FacStaff-01. FacStaff-04 replies, indicating a successful connection between two devices on the same VLAN, but a different switch.
+
+### **4. Enable Routing**
+
+* **The Core Switches are multi-layer and can route**
+* **We will use the EAST-Core Switch as the Router**
+
+
+
+* **Enable routing on the the East-Core Switch**
+* **Assign the router addresses from the table in step 1 to:**
+  * **VLANs 100,110,130, 140 to East-Core**
+
+<pre><code><strong>(config)ip routing (turns on routing on multilayer switches)
+</strong><strong>(config)interface vlan 100 (brings you into vlan interface config mode)
+</strong><strong>(config-if)ip address 10.8.11.1 255.255.255.0 (set the ip address of 10.8.11.1 for vlan 100 on a routing switch)
+</strong><strong>NOTE: This only needs to be set on the router-switch acting as the gateway for the vlan
+</strong></code></pre>
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+**This command sequence turns the VLAN 130 interface on East-Core-Switch-01 into a default gateway for VLAN 130 devices.**&#x20;
+
+**Verification:**&#x20;
+
+**You should now be able to ping between two systems on different VLANs in EAST:**
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+
+I pinged Lab1-01 (10.8.12.2) from FacStaff-01. Lab1-01 replies, indicating a successful connection between two devices on different VLANs in the East.
+
+**5.  Configure East-West Trunk**
+
+* **Configure Gigabit Ethernet 0/1 on both East and West core switches as trunk ports for defined vlans:**
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+
+* **Copper "cross-over" connector to connect those trunk ports**
+
+
+
+**Verification: You should be able to ping between all devices:**
+
+<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+
+**I pinged Lab2-01 (10.8.12.66) from FacStaff-01. Lab2-01 replies, indicating a successful connection between two devices in a different VLAN, on a different switch, on the West side of the theoretical School Network.**&#x20;
+
+**Network for a School:**&#x20;
+
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption><p>Simulated School Network </p></figcaption></figure>
 
 ### **Tech Journal Entry for Lab 2-1 Subnet Design**
 
