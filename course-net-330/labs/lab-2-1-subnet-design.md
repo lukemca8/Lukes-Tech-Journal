@@ -76,7 +76,43 @@ Default Gateway and Netmask: 10.8.12.65 , 255.255.255.192
 
 01= 10.8.12.66
 
+**Connect Devices to Edge Switch**
 
+* **Connect devices with Copper to appropriate ports:**
+  * **VLAN 100 (FacStaff) on ports 4-12**
+  * **VLAN 110 (Student) on ports 13-20**
+  * **VLAN 130 (Lab1) on ports 21-24**
+  * **VLAN 140 (Lab2) on ports 21-24**
+
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+
+The image above displays every end device's FastEthernet0 port connected to its assigned switch port, based on the VLAN the device is in.
+
+**Verification that Step 1 is complete:**
+
+* **Ping devices on same vlan and same switch**
+* **Not able to ping different vlans or different switch**
+
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+I ping FacStaff-02 (10.8.11.3) from FacStaff-01 (10.8.11.2). FacStaff-02 replies, indicating a successful connection between devices on the same VLAN on the same switch.
+
+I ping Student-01 (10.8.8.3) from FacStaff-01. The request times out, indicating a failed connection between devices on different VLANs on the same switch.
+
+I ping FacStaff-05 (10.8.11.6) from FacStaff-01. The request times out, indicating a failed connection between devices on the same VLAN, but a different switch.&#x20;
+
+### **Configure Trunking**
+
+#### **Configure trunk ports for Core switches**
+
+* **Add vlans 100, 110, 130, and 140 to the vlan database on Core Switches**
+* **Configure FastEthernet 0/1 and 0/2 as trunk ports for the appropriate vlans**
+
+
+
+#### **Configure trunk ports for Edge switches**
+
+* **Configure FastEthernet 0/1 as trunk port for the appropriate vlans**
 
 ### **Tech Journal Entry for Lab 2-1 Subnet Design**
 
